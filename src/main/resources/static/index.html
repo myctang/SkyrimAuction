@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skyrim auction</title>
+</head>
+<body>
+    <div id='root'></div>
+
+    <script src="https://fb.me/react-15.0.1.js"></script>
+    <script src="https://fb.me/react-dom-15.0.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script type="text/babel">
+        var EMPLOYEE = [
+            {name: 'Joe Barbaro', age: 12, years: 2},
+            {name: 'Micheal Jordan', age: 23, years: 5},
+            {name: 'Vitto Skaletto', age: 55, years: 7}
+        ];
+
+        var Employee = React.createClass({
+            render: function () {
+                return (
+                    <tr>
+                        <td>{this.props.employee.name}</td>
+                        <td>{this.props.employee.age}</td>
+                        <td>{this.props.employee.years}</td>
+                    </tr>
+                );
+            }
+        });
+
+        var EmployeeTable = React.createClass({
+            render: function () {
+                var rows = [];
+                this.props.employees.forEach(function(employee) {
+                    rows.push(<Employee employee={employee} />);
+                });
+                return(
+                    <div className="container">
+                        <table className="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th><th>Age</th><th>Years</th>
+                                </tr>
+                            </thead>
+                            <tbody>{rows}</tbody>
+                        </table>
+                    </div>
+                );
+            }
+        });
+
+        ReactDOM.render(
+            <EmployeeTable employees={EMPLOYEE}/>, document.getElementById('root')
+        );
+    </script>
+</body>
+</html>
