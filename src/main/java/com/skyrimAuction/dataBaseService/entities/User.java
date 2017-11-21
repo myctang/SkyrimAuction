@@ -6,13 +6,30 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Данный класс представляет собой зарегистрированного пользователя.
+ */
 @Entity
 @Table(name="users")
 public class User {
+    /**
+     * Код пользователя.
+     */
     @Id
     private long id;
+    /**
+     * Имя пользователя.
+     */
     private String name;
+    /**
+     * Стартовое количество денег.
+     */
     private long money;
+    /**
+     * Лист предметов, которые есть в наличии у пользователя.
+     *
+     * @see List
+     */
     @ManyToMany
     @JoinTable(
             name = "inventory",
@@ -20,9 +37,20 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "item", referencedColumnName = "id")
     )
     private List<Item> inventory;
+    /**
+     * Квест которым пользователь в данный момент обладает.
+     *
+     * @see Quest
+     */
     @ManyToOne
     private Quest quest;
 
+    /**
+     * Инициализирует объект класса {@link User}
+     * Инициализирует поля {@link User#id}, {@link User#name}, {@link User#money}
+     *
+     * @param user - Объект класса {@link User}
+     */
     public User(UserModel user) {
         this.id = user.getId();
         this.name = user.getName();

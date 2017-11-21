@@ -35,7 +35,6 @@ create table sellingitems (
   item_id                       bigint not null,
   price                         integer not null,
   selling_start                 date,
-  duration                      bigint not null,
   constraint pk_sellingitems primary key (id)
 );
 

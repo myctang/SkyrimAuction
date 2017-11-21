@@ -6,19 +6,48 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * Данный класс представляет собой предмет.
+ *
+ * @see User
+ */
 @Entity
 @Table(name="items")
-public class Item{
+public class Item {
+    /**
+     * Код предмета.
+     */
     @Id
     private long id;
+    /**
+     * Название предмета.
+     */
     private String name;
+    /**
+     * Вес предмета.
+     */
     private int weight;
+    /**
+     * Показатель защиты предмета.
+     */
     private int defence;
+    /**
+     * Показатель атаки предмета.
+     */
     private int damage;
 
+    /**
+     * Создает объект класса Item.
+     */
     public Item() {
     }
 
+    /**
+     * Создает объект класса Item из объекта класса {@link Item} переданного в качестве аргумента.
+     * Инициализирует поля {@link Item#name}, {@link Item#weight}, {@link Item#defence}, {@link Item#damage}.
+     *
+     * @param item - Объект класса {@link Item}
+     */
     public Item(ItemModel item) {
         this.name = item.getName();
         this.weight = item.getWeight();
