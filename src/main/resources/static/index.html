@@ -6,55 +6,13 @@
 </head>
 <body>
     <div id='root'></div>
-
     <script src="https://fb.me/react-15.0.1.js"></script>
     <script src="https://fb.me/react-dom-15.0.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <script type="text/babel">
-        var EMPLOYEE = [
-            {name: 'Joe Barbaro', age: 12, years: 2},
-            {name: 'Micheal Jordan', age: 23, years: 5},
-            {name: 'Vitto Skaletto', age: 55, years: 7}
-        ];
-
-        var Employee = React.createClass({
-            render: function () {
-                return (
-                    <tr>
-                        <td>{this.props.employee.name}</td>
-                        <td>{this.props.employee.age}</td>
-                        <td>{this.props.employee.years}</td>
-                    </tr>
-                );
-            }
-        });
-
-        var EmployeeTable = React.createClass({
-            render: function () {
-                var rows = [];
-                this.props.employees.forEach(function(employee) {
-                    rows.push(<Employee employee={employee} />);
-                });
-                return(
-                    <div className="container">
-                        <table className="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Name</th><th>Age</th><th>Years</th>
-                                </tr>
-                            </thead>
-                            <tbody>{rows}</tbody>
-                        </table>
-                    </div>
-                );
-            }
-        });
-
-        ReactDOM.render(
-            <EmployeeTable employees={EMPLOYEE}/>, document.getElementById('root')
-        );
-    </script>
+    <script type="text/babel" src="/public/bundle.js"></script>
 </body>
 </html>

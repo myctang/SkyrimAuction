@@ -20,6 +20,32 @@ public class SellingItemService {
         return server.find(SellingItem.class).findList();
     }
 
+    public SellingItem getSellingItem(long id){
+        return server.find(SellingItem.class, id);
+    }
+
+    public SellingItem addSellingItem(SellingItem item){
+        server.save(item);
+        return item;
+    }
+
+    public SellingItem createSellingItem(SellingItem item){
+        server.save(item);
+        return item;
+    }
+
+    public SellingItem setPrice(long id, int price){
+        SellingItem item = server.find(SellingItem.class, id);
+        item.setPrice(price);
+        server.save(item);
+        return item;
+    }
+
+    public boolean removeSellingItem(long id){
+        server.delete(SellingItem.class, id);
+        return true;
+    }
+
     @Transactional
     public SellingItem save(SellingItem item){
         server.save(item);

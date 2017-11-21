@@ -19,7 +19,9 @@ public class User {
             joinColumns = @JoinColumn(name = "owner", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "item", referencedColumnName = "id")
     )
-    List<Item> inventory = new ArrayList<Item>();
+    private List<Item> inventory;
+    @ManyToOne
+    private Quest quest;
 
     public User(UserModel user) {
         this.id = user.getId();
@@ -57,5 +59,13 @@ public class User {
 
     public void setInventory(List<Item> inventory) {
         this.inventory = inventory;
+    }
+
+    public Quest getQuest() {
+        return quest;
+    }
+
+    public void setQuest(Quest quest) {
+        this.quest = quest;
     }
 }

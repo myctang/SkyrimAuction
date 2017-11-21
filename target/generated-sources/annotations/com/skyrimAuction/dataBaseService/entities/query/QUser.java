@@ -2,6 +2,7 @@ package com.skyrimAuction.dataBaseService.entities.query;
 
 import com.skyrimAuction.dataBaseService.entities.User;
 import com.skyrimAuction.dataBaseService.entities.query.assoc.QAssocItem;
+import com.skyrimAuction.dataBaseService.entities.query.assoc.QAssocQuest;
 import io.ebean.EbeanServer;
 import io.ebean.typequery.PLong;
 import io.ebean.typequery.PString;
@@ -30,6 +31,7 @@ public class QUser extends TQRootBean<User,QUser> {
   public PString<QUser> name;
   public PLong<QUser> money;
   public QAssocItem<QUser> inventory;
+  public QAssocQuest<QUser> quest;
 
 
   /**
@@ -62,5 +64,6 @@ public class QUser extends TQRootBean<User,QUser> {
     public static PString<QUser> name = _alias.name;
     public static PLong<QUser> money = _alias.money;
     public static QAssocItem<QUser> inventory = _alias.inventory;
+    public static QAssocQuest<QUser> quest = _alias.quest;
   }
 }

@@ -1,6 +1,7 @@
 package com.skyrimAuction.dataBaseService.services;
 
 import com.skyrimAuction.dataBaseService.entities.Item;
+import com.skyrimAuction.dataBaseService.entities.SellingItem;
 import io.ebean.EbeanServer;
 import io.ebean.annotation.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,23 @@ public class ItemService {
 
     public List<Item> getItems(){
         return server.find(Item.class).findList();
+    }
+
+    public Item getItem(long id){return server.find(Item.class, id);}
+
+    public boolean updateItem(long id, Item item){
+        server.save(item);
+        return true;
+    }
+
+    public Item createItem(Item item){
+        server.save(item);
+        return item;
+    }
+
+    public boolean removeItem(long id){
+        server.delete(SellingItem.class, id);
+        return true;
     }
 
     @Transactional

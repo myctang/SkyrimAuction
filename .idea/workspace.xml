@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cf2c2c9-a406-4b4b-97ef-b7439b2903a5" name="Default" comment="" />
+    <list default="true" id="7cf2c2c9-a406-4b4b-97ef-b7439b2903a5" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Code.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Quest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/CodeService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/QuestService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/app.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/Logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/public/components/MainPage.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/public/components/MainPage.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/styles/main.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/SkyrimAuction.iml" afterPath="$PROJECT_DIR$/SkyrimAuction.iml" />
+      <change beforePath="$PROJECT_DIR$/db-create-all.sql" afterPath="$PROJECT_DIR$/db-create-all.sql" />
+      <change beforePath="$PROJECT_DIR$/db-drop-all.sql" afterPath="$PROJECT_DIR$/db-drop-all.sql" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/ItemService.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/ItemService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/components/test.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/controllers/ItemController.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/controllers/ItemController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/User.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/User.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QSellingItems$Alias.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QSellingItems.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QUser$Alias.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QUser$Alias.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QUser.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QUser.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QUsers$Alias.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QUsers.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocSellingItems.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocUser.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocUser.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocUsers.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/services/ItemService.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/services/ItemService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/services/SellingItemService.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/services/SellingItemService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/services/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/services/UserService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/components/test.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" afterPath="$PROJECT_DIR$/target/classes/static/index.html" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/QSellingItems.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/QUser.java" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/QUser.java" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/QUsers.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocSellingItems.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocUser.java" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocUser.java" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocUsers.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,85 +62,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ItemController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/ItemController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#904#915#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ebean.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ebean.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#1159#1160#0" expanded="true" />
-                <element signature="e#1188#1189#0" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1265#1266#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            <state relative-caret-position="2125">
+              <caret line="125" column="32" lean-forward="false" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/ItemModel.java">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainPage.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/components/MainPage.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainPage.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/public/components/MainPage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
               <folding>
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#1065#1066#0" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/UserController.java">
+      <file leaf-file-name="Logo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/images/Logo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#903#914#0" expanded="true" />
-                <element signature="e#1220#1221#0" expanded="true" />
-                <element signature="e#1290#1291#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,9 +167,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -128,10 +194,7 @@
         <option value="$PROJECT_DIR$/src/main/java/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/components/test.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/DataBaseServiceInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/ItemService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/CurrentUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/EbeanFactoryBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/ItemControler.java" />
@@ -139,21 +202,39 @@
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Users.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/SellingItems.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserSevice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/ItemModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/UserModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/SellingItemModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/SellingItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/SellingItemsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/ItemModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Item.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/ebean.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/ItemController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ebean.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Quest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Code.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/ItemService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/QuestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/CodeService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/components/test.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/MainPage.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/components/MainPage.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/test.jsx" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/styles/MainPage.css" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/main.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/public/components/MainPage.jsx" />
+        <option value="$PROJECT_DIR$/src/app.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/styles/main.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/app.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app.js" />
       </list>
     </option>
   </component>
@@ -175,9 +256,42 @@
           <item name="SkyrimAuction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SkyrimAuction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SkyrimAuction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="spring-boot" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SkyrimAuction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SkyrimAuction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-web:1.4.1.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SkyrimAuction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-web:1.4.1.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="com.fasterxml.jackson.core:jackson-databind:2.8.3" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
       </expand>
       <select />
     </treeState>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
@@ -201,6 +315,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -249,74 +364,13 @@
               <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="skyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="dataBaseService" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="skyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="dataBaseService" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="skyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="dataBaseService" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="skyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="dataBaseService" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,10 +394,18 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.16113281" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.skyrimAuction.dataBaseService.entities" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Igor\IdeaProjects\SkyrimAuction\src\main\webapp" />
+      <recent name="C:\Users\Igor\IdeaProjects\SkyrimAuction\src\main\resources\static\styles" />
+      <recent name="C:\Users\Igor\IdeaProjects\SkyrimAuction\src\main\resources" />
+      <recent name="C:\Users\Igor\IdeaProjects\SkyrimAuction\src\main\resources\static" />
+      <recent name="C:\Users\Igor\IdeaProjects\SkyrimAuction\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -467,19 +529,28 @@
       <workItem from="1510389585120" duration="3145000" />
       <workItem from="1510392809494" duration="9693000" />
       <workItem from="1510422967883" duration="3532000" />
-      <workItem from="1510502140192" duration="11954000" />
+      <workItem from="1510502140192" duration="12601000" />
+      <workItem from="1510577509503" duration="502000" />
+      <workItem from="1510597485987" duration="3511000" />
+      <workItem from="1510748997914" duration="7405000" />
+      <workItem from="1510927718688" duration="141000" />
+      <workItem from="1511083718036" duration="681000" />
+      <workItem from="1511089610975" duration="15677000" />
+      <workItem from="1511175787555" duration="41000" />
+      <workItem from="1511274542435" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37785000" />
+    <option name="totallyTimeSpent" value="66409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25746268" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -488,7 +559,6 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -496,8 +566,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3381894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26012793" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -506,9 +576,43 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25746268" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3381894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -518,20 +622,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Item.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Item.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
@@ -598,104 +688,6 @@
     <option name="enabled" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/EbeanFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/CurrentUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ebean.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/ebean/ebean/11.4.1/ebean-11.4.1.jar!/io/ebean/config/ServerConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4760">
-          <caret line="280" column="34" lean-forward="false" selection-start-line="280" selection-start-column="21" selection-end-line="280" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#904#915#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/DataBaseServiceInterface.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.3.RELEASE/spring-beans-4.3.3.RELEASE.jar!/org/springframework/beans/factory/FactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/ebean/ebean/11.4.1/ebean-11.4.1.jar!/io/ebean/config/PropertyMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/ebean/ebean/11.4.1/ebean-11.4.1.jar!/io/ebean/config/ServerConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="1106" column="16" lean-forward="false" selection-start-line="1106" selection-start-column="16" selection-end-line="1106" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.3.RELEASE/spring-beans-4.3.3.RELEASE.jar!/org/springframework/beans/factory/support/FactoryBeanRegistrySupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/ebean/ebean/11.4.1/ebean-11.4.1.jar!/io/ebean/EbeanServerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/ebean/ebean/11.4.1/ebean-11.4.1.jar!/io/ebeaninternal/server/core/DefaultContainer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/ebean/ebean/11.4.1/ebean-11.4.1-sources.jar!/io/ebean/config/PropertyMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/avaje/avaje-datasource/2.1.2/avaje-datasource-2.1.2.jar!/org/avaje/datasource/pool/ConnectionPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="83" column="26" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/avaje/avaje-datasource/2.1.2/avaje-datasource-2.1.2.jar!/org/avaje/datasource/core/Factory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -738,14 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.3.RELEASE/spring-beans-4.3.3.RELEASE.jar!/org/springframework/beans/factory/annotation/InjectionMetadata.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -760,94 +744,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/EbeanFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/components/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="61" lean-forward="false" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.5/tomcat-embed-core-8.5.5.jar!/org/apache/coyote/http11/Http11InputBuffer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3434">
           <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
-          <folding>
-            <marker date="1510236761550" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1510236761550" expanded="false" signature="148:661" ph="..." />
-            <marker date="1510236761550" expanded="true" signature="2005:2719" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="2760:3329" ph="{...}" />
-            <marker date="1510236761550" expanded="false" signature="3361:3372" ph=" { " />
-            <marker date="1510236761550" expanded="false" signature="3398:3404" ph=" }" />
-            <marker date="1510236761550" expanded="true" signature="3451:3942" ph="{...}" />
-            <marker date="1510236761550" expanded="false" signature="3990:4001" ph=" { " />
-            <marker date="1510236761550" expanded="false" signature="4034:4040" ph=" }" />
-            <marker date="1510236761550" expanded="true" signature="4100:4253" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="4274:4939" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="4964:5770" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="5839:13085" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="13133:14035" ph="{...}" />
-            <marker date="1510236761550" expanded="false" signature="14073:14084" ph=" { " />
-            <marker date="1510236761550" expanded="false" signature="14120:14126" ph=" }" />
-            <marker date="1510236761550" expanded="true" signature="14169:14370" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="14404:15149" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="15176:15389" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="15420:15564" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="15616:15893" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="15954:16592" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="16675:22182" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="22262:23235" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="23248:25043" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="25104:25714" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="25142:25153" ph="{}" />
-            <marker date="1510236761550" expanded="true" signature="25217:25708" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="25757:26235" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="25901:26049" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="26081:26229" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="26281:26484" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="26467:26478" ph="{}" />
-            <marker date="1510236761550" expanded="true" signature="26528:26649" ph="{...}" />
-            <marker date="1510236761550" expanded="true" signature="26632:26643" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,15 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,78 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#427#428#0" expanded="false" />
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#486#487#0" expanded="false" />
-            <element signature="e#514#515#0" expanded="false" />
-            <element signature="e#545#546#0" expanded="false" />
-            <element signature="e#572#573#0" expanded="false" />
-            <element signature="e#612#613#0" expanded="false" />
-            <element signature="e#644#645#0" expanded="false" />
-            <element signature="e#674#675#0" expanded="false" />
-            <element signature="e#702#703#0" expanded="false" />
-            <element signature="e#742#743#0" expanded="false" />
-            <element signature="e#776#777#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#603#609#0" expanded="false" />
-            <element signature="e#785#786#0" expanded="false" />
-            <element signature="e#810#811#0" expanded="false" />
-            <element signature="e#844#845#0" expanded="false" />
-            <element signature="e#872#873#0" expanded="false" />
-            <element signature="e#903#904#0" expanded="false" />
-            <element signature="e#930#931#0" expanded="false" />
-            <element signature="e#970#971#0" expanded="false" />
-            <element signature="e#1002#1003#0" expanded="false" />
-            <element signature="e#1032#1033#0" expanded="false" />
-            <element signature="e#1060#1061#0" expanded="false" />
-            <element signature="e#1100#1101#0" expanded="false" />
-            <element signature="e#1134#1135#0" expanded="false" />
-            <element signature="e#1174#1175#0" expanded="false" />
-            <element signature="e#1206#1207#0" expanded="false" />
-            <element signature="e#1260#1261#0" expanded="false" />
-            <element signature="e#1302#1303#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/SellingItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#794#795#0" expanded="false" />
-            <element signature="e#819#820#0" expanded="false" />
-            <element signature="e#853#854#0" expanded="false" />
-            <element signature="e#881#882#0" expanded="false" />
-            <element signature="e#910#911#0" expanded="false" />
-            <element signature="e#937#938#0" expanded="false" />
-            <element signature="e#975#976#0" expanded="false" />
-            <element signature="e#1007#1008#0" expanded="false" />
-            <element signature="e#1036#1037#0" expanded="false" />
-            <element signature="e#1064#1065#0" expanded="false" />
-            <element signature="e#1103#1104#0" expanded="false" />
-            <element signature="e#1137#1138#0" expanded="false" />
-            <element signature="e#1174#1175#0" expanded="false" />
-            <element signature="e#1209#1210#0" expanded="false" />
-            <element signature="e#1263#1264#0" expanded="false" />
-            <element signature="e#1311#1312#0" expanded="false" />
-            <element signature="e#1344#1345#0" expanded="false" />
-            <element signature="e#1375#1376#0" expanded="false" />
-            <element signature="e#1421#1422#0" expanded="false" />
-            <element signature="e#1461#1462#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="90" column="55" lean-forward="true" selection-start-line="90" selection-start-column="55" selection-end-line="90" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -966,37 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#598#599#0" expanded="false" />
-            <element signature="e#623#624#0" expanded="false" />
-            <element signature="e#657#658#0" expanded="false" />
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#719#720#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#789#790#0" expanded="false" />
-            <element signature="e#821#822#0" expanded="false" />
-            <element signature="e#850#851#0" expanded="false" />
-            <element signature="e#878#879#0" expanded="false" />
-            <element signature="e#917#918#0" expanded="false" />
-            <element signature="e#951#952#0" expanded="false" />
-            <element signature="e#988#989#0" expanded="false" />
-            <element signature="e#1023#1024#0" expanded="false" />
-            <element signature="e#1077#1078#0" expanded="false" />
-            <element signature="e#1125#1126#0" expanded="false" />
-            <element signature="e#1158#1159#0" expanded="false" />
-            <element signature="e#1189#1190#0" expanded="false" />
-            <element signature="e#1235#1236#0" expanded="false" />
-            <element signature="e#1275#1276#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/CurrentUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,22 +790,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding>
-            <element signature="e#951#969#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
+        <state relative-caret-position="289">
           <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#903#914#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,19 +804,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/ItemModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="459">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,128 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2567">
           <caret line="629" column="27" lean-forward="false" selection-start-line="629" selection-start-column="27" selection-end-line="629" selection-end-column="27" />
-          <folding>
-            <marker date="1510246001780" expanded="true" signature="0:104" ph="/.../" />
-            <marker date="1510246001780" expanded="false" signature="137:488" ph="..." />
-            <marker date="1510246001780" expanded="true" signature="1595:1731" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="1765:1776" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="1794:1800" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="1855:1866" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="1897:1903" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="1982:2043" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="2117:2128" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="2169:2175" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="2213:2224" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="2250:2256" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="2296:2307" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="2338:2344" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="2383:2394" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="2424:2430" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="2504:2515" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="2555:2561" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="2643:2745" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="2824:2961" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="3016:3114" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="3154:3165" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="3193:3199" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="3260:3271" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="3310:3316" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="3349:3633" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="3663:3674" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="3692:3698" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="3755:3846" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="3887:3898" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="3917:3923" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="3951:3962" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="3985:3991" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="4026:4037" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="4075:4081" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="4125:4441" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="4475:4486" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="4509:4515" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="4557:4803" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="4836:4847" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="4868:4874" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="4921:4932" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="4957:4963" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="4994:5005" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="5028:5034" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="5060:5071" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="5086:5092" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="5122:5330" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="5364:5431" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="5484:5560" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="5600:5611" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="5639:5645" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="5685:5696" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="5724:5730" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="5791:5802" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="5841:5847" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="5904:6076" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="6139:6363" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="6415:6502" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="6553:6791" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="6842:6943" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="6979:6990" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="7041:7047" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="7120:7380" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="7436:7447" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="7487:7493" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="7547:7558" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="7597:7603" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="7644:7761" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="7817:7828" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="7867:7873" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="7931:8016" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="8072:8224" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="8283:8367" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="8423:8621" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="8684:8885" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="8954:9215" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="9255:9601" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="9651:10017" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="10061:10464" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="10513:10648" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="10722:11318" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="11383:11903" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="11956:12121" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="12213:12970" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="13036:13709" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="13758:13870" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="13927:14467" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="14517:14786" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="14821:14832" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="14857:14863" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="14897:14908" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="14932:14938" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="14981:14992" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="15021:15027" ph=" }" />
-            <marker date="1510246001780" expanded="false" signature="15068:15079" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="15126:15132" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="15180:15798" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="15871:16816" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="16875:17455" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="17507:17518" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="17557:17563" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="17619:17751" ph="{...}" />
-            <marker date="1510246001780" expanded="false" signature="17779:17790" ph=" { " />
-            <marker date="1510246001780" expanded="false" signature="17817:17823" ph=" }" />
-            <marker date="1510246001780" expanded="true" signature="17870:18256" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="18365:18549" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="18652:19371" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="19471:19706" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="19808:20029" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="20123:20344" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="20440:20661" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="20761:21001" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="21099:21338" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="21436:21657" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="21753:21974" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="22070:22291" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="22391:22626" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="22726:22961" ph="{...}" />
-            <marker date="1510246001780" expanded="true" signature="23027:23103" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1176,92 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="916" column="14" lean-forward="false" selection-start-line="916" selection-start-column="14" selection-end-line="916" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/Item.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="148" column="63" lean-forward="false" selection-start-line="148" selection-start-column="63" selection-end-line="148" selection-end-column="63" />
-          <folding>
-            <marker date="1510516509190" expanded="true" signature="0:104" ph="/.../" />
-            <marker date="1510516509190" expanded="false" signature="166:467" ph="..." />
-            <marker date="1510516509190" expanded="true" signature="469:505" ph="@{...}" />
-            <marker date="1510516509190" expanded="true" signature="968:975" ph="{}" />
-            <marker date="1510516509190" expanded="true" signature="1009:1214" ph="{...}" />
-            <marker date="1510516509190" expanded="false" signature="1239:1250" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="1278:1284" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="1316:1327" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="1350:1356" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="1385:1396" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="1426:1432" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="1470:1481" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="1508:1514" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="1542:1553" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="1585:1591" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="1630:1641" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="1672:1678" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="1707:1718" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="1751:1757" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="1798:1809" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="1842:1848" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="1876:1887" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="1919:1925" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="1964:1975" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="2006:2012" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="2050:2061" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="2082:2088" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="2135:2146" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="2166:2172" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="2223:2234" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="2259:2265" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="2319:2330" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="2359:2365" ph=" }" />
-            <marker date="1510516509190" expanded="true" signature="2417:2585" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="2662:2736" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="2826:2906" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="2986:3063" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="3156:3239" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="3276:3349" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="3399:3579" ph="{...}" />
-            <marker date="1510516509190" expanded="false" signature="3617:3628" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="3643:3649" ph=" }" />
-            <marker date="1510516509190" expanded="true" signature="3702:3790" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="3831:3908" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="3962:4156" ph="{...}" />
-            <marker date="1510516509190" expanded="false" signature="4198:4209" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="4226:4232" ph=" }" />
-            <marker date="1510516509190" expanded="true" signature="4289:4379" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="4419:4498" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="4551:4749" ph="{...}" />
-            <marker date="1510516509190" expanded="false" signature="4790:4801" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="4820:4826" ph=" }" />
-            <marker date="1510516509190" expanded="true" signature="4882:4974" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="5015:5095" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="5149:5349" ph="{...}" />
-            <marker date="1510516509190" expanded="false" signature="5391:5402" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="5422:5428" ph=" }" />
-            <marker date="1510516509190" expanded="true" signature="5485:5578" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="5618:5697" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="5750:5948" ph="{...}" />
-            <marker date="1510516509190" expanded="false" signature="5989:6000" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="6019:6025" ph=" }" />
-            <marker date="1510516509190" expanded="true" signature="6081:6173" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="6220:6579" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="6635:7059" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="7114:7659" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="7723:8258" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="8300:8735" ph="{...}" />
-            <marker date="1510516509190" expanded="true" signature="8775:9058" ph="{...}" />
-            <marker date="1510516509190" expanded="false" signature="9085:9096" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="9140:9146" ph=" }" />
-            <marker date="1510516509190" expanded="true" signature="9191:9198" ph="{}" />
-            <marker date="1510516509190" expanded="false" signature="9248:9259" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="9272:9278" ph=" }" />
-            <marker date="1510516509190" expanded="false" signature="9318:9329" ph=" { " />
-            <marker date="1510516509190" expanded="false" signature="9347:9353" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1269,179 +832,224 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="673" column="31" lean-forward="false" selection-start-line="673" selection-start-column="31" selection-end-line="673" selection-end-column="31" />
-          <folding>
-            <marker date="1510516485859" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1510516485859" expanded="false" signature="137:610" ph="..." />
-            <marker date="1510516485859" expanded="true" signature="1766:1902" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="1936:1947" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="1965:1971" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="2026:2037" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="2068:2074" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="2153:2214" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="2291:2457" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="2555:2735" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="2815:2926" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="3027:3152" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="3226:3237" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="3278:3284" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="3322:3333" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="3359:3365" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="3405:3416" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="3447:3453" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="3492:3503" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="3533:3539" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="3613:3624" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="3664:3670" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="3752:3854" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="3933:4070" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="4125:4223" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="4263:4274" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="4302:4308" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="4369:4380" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="4419:4425" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="4458:4742" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="4772:4783" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="4801:4807" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="4864:4955" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="4996:5007" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="5026:5032" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="5060:5071" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="5094:5100" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="5135:5146" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="5184:5190" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="5234:5550" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="5584:5595" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="5618:5624" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="5666:5912" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="5945:5956" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="5977:5983" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="6030:6041" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="6066:6072" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="6103:6114" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="6137:6143" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="6169:6180" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="6195:6201" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="6231:6439" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="6473:6540" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="6593:6669" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="6709:6720" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="6748:6754" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="6794:6805" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="6833:6839" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="6900:6911" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="6950:6956" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="7013:7185" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="7248:7472" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="7524:7611" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="7662:7900" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="7951:8052" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="8088:8099" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="8150:8156" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="8229:8489" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="8545:8556" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="8596:8602" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="8656:8667" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="8706:8712" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="8753:8870" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="8926:8937" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="8976:8982" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="9040:9125" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="9181:9333" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="9392:9476" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="9532:9730" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="9793:9994" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="10063:10324" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="10364:10710" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="10760:11126" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="11170:11573" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="11622:11757" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="11831:12427" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="12492:13012" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="13065:13230" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="13322:14079" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="14145:14818" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="14867:14979" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="15036:15576" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="15626:15895" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="15930:15941" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="15966:15972" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="16006:16017" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="16041:16047" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="16090:16101" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="16130:16136" ph=" }" />
-            <marker date="1510516485859" expanded="false" signature="16177:16188" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="16235:16241" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="16289:16907" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="16980:17925" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="17984:18564" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="18616:18627" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="18666:18672" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="18711:18830" ph="{...}" />
-            <marker date="1510516485859" expanded="false" signature="18858:18869" ph=" { " />
-            <marker date="1510516485859" expanded="false" signature="18894:18900" ph=" }" />
-            <marker date="1510516485859" expanded="true" signature="18947:19320" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="19376:19491" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="19564:19895" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="20019:20338" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="20441:21160" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="21275:21698" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="21815:22225" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="22334:22744" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="22855:23265" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="23380:23809" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="23922:24350" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="24463:24873" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="24984:25394" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="25505:25915" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="26030:26453" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="26568:26991" ph="{...}" />
-            <marker date="1510516485859" expanded="true" signature="27057:27133" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ebean.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#1159#1160#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/ItemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+        <state relative-caret-position="391">
+          <caret line="34" column="53" lean-forward="false" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db-drop-all.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db-create-all.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/Item.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="148" column="63" lean-forward="false" selection-start-line="148" selection-start-column="63" selection-end-line="148" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ebean.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/CurrentUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/EbeanFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/ebean/ebean/11.1.1/ebean-11.1.1.jar!/io/ebean/EbeanServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="102" column="10" lean-forward="false" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/SellingItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Quest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="63" column="29" lean-forward="false" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/QuestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/CodeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Code.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="9393" column="13" lean-forward="false" selection-start-line="9393" selection-start-column="13" selection-end-line="9393" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" column="32" lean-forward="false" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/Logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/components/MainPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/components/MainPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#904#915#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

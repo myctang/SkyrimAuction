@@ -20,6 +20,7 @@ public class QAssocUser<R> extends TQAssocBean<User,R> {
   public PString<R> name;
   public PLong<R> money;
   public QAssocItem<R> inventory;
+  public QAssocQuest<R> quest;
 
   /**
    * Eagerly fetch this association loading the specified properties.
