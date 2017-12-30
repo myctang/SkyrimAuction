@@ -95,5 +95,8 @@ public class Item {
         this.damage = damage;
     }
 
-
+    @Override
+    public String toString() {
+        return name;
+    }
 }

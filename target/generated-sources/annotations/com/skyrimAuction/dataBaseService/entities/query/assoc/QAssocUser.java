@@ -2,6 +2,7 @@ package com.skyrimAuction.dataBaseService.entities.query.assoc;
 
 import com.skyrimAuction.dataBaseService.entities.User;
 import com.skyrimAuction.dataBaseService.entities.query.QUser;
+import io.ebean.typequery.PBoolean;
 import io.ebean.typequery.PLong;
 import io.ebean.typequery.PString;
 import io.ebean.typequery.TQAssocBean;
@@ -19,8 +20,13 @@ public class QAssocUser<R> extends TQAssocBean<User,R> {
   public PLong<R> id;
   public PString<R> name;
   public PLong<R> money;
+  public PString<R> password;
   public QAssocItem<R> inventory;
   public QAssocQuest<R> quest;
+  public PBoolean<R> accountNonExpired;
+  public PBoolean<R> accountNonLocked;
+  public PBoolean<R> credentialsNonExpired;
+  public PBoolean<R> enabled;
 
   /**
    * Eagerly fetch this association loading the specified properties.

@@ -24,7 +24,7 @@ public class ItemService {
 
     public Item getItem(long id){return server.find(Item.class, id);}
 
-    public boolean updateItem(long id, Item item){
+    public boolean updateItem(Item item){
         server.save(item);
         return true;
     }

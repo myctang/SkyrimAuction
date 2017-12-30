@@ -34,6 +34,11 @@ public class SellingItem {
     private Date sellingStart;
 
     /**
+     * Продолжительность аукциона.
+     */
+    private long duration;
+
+    /**
      * Инициализирует объект класса {@link SellingItem}.
      * Инициализирует поля {@link SellingItem#id}, {@link SellingItem#item}, {@link SellingItem#price}, {@link SellingItem#sellingStart}.
      *
@@ -44,6 +49,14 @@ public class SellingItem {
         this.item = new Item(item.getItem());
         this.price = item.getPrice();
         this.sellingStart = item.getSellingStart();
+    }
+
+    public long getDuration() {
+        return duration;
+    }
+
+    public void setDuration(long duration) {
+        this.duration = duration;
     }
 
     public long getId() {

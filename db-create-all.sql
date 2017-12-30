@@ -20,7 +20,6 @@ create table quests (
   name                          varchar(255),
   type                          tinyint(1) default 0 not null,
   description                   varchar(255),
-  current_quest_id              bigint not null,
   constraint pk_quests primary key (id)
 );
 
@@ -35,6 +34,7 @@ create table sellingitems (
   item_id                       bigint not null,
   price                         integer not null,
   selling_start                 date,
+  duration                      bigint not null,
   constraint pk_sellingitems primary key (id)
 );
 
@@ -54,9 +54,6 @@ create table inventory (
 
 alter table code add constraint fk_code_item_id foreign key (item_id) references items (id) on delete restrict on update restrict;
 create index ix_code_item_id on code (item_id);
-
-alter table quests add constraint fk_quests_current_quest_id foreign key (current_quest_id) references quests (id) on delete restrict on update restrict;
-create index ix_quests_current_quest_id on quests (current_quest_id);
 
 alter table rewards add constraint fk_rewards_quests foreign key (quest) references quests (id) on delete restrict on update restrict;
 create index ix_rewards_quests on rewards (quest);

@@ -24,7 +24,7 @@ public class SellingItemService {
         return server.find(SellingItem.class, id);
     }
 
-    public SellingItem addSellingItem(SellingItem item){
+    public SellingItem updateSellingItem(SellingItem item){
         server.save(item);
         return item;
     }

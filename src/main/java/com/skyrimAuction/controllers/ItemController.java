@@ -1,14 +1,11 @@
-package com.skyrimAuction.dataBaseService.controllers;
+package com.skyrimAuction.controllers;
 
 import com.skyrimAuction.dataBaseService.entities.Item;
 import com.skyrimAuction.dataBaseService.models.ItemModel;
 import com.skyrimAuction.dataBaseService.services.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +31,20 @@ public class ItemController {
     @ResponseBody
     public ItemModel add(@RequestBody ItemModel item){
         return new ItemModel(itemService.save(new Item(item)));
+    }
+
+    @DeleteMapping(value="/items", consumes = "application/json")
+    @ResponseBody
+    public boolean remove(@RequestBody Long id){
+        itemService.removeItem(id);
+        return true;
+    }
+
+    @PutMapping(value = "/items", consumes = "application/json")
+    @ResponseBody
+    public Item update(@RequestBody Item item){
+        itemService.updateItem(item);
+        return item;
     }
 
 }
