@@ -1,18 +1,49 @@
 package com.skyrimAuction.dataBaseService.entities;
 
 import com.skyrimAuction.dataBaseService.models.UserModel;
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
+/**
+ * Данный класс представляет собой зарегистрированного пользователя.
+ */
 @Entity
 @Table(name="users")
-public class User {
+public class User implements UserDetails {
+    /**
+     * Код пользователя.
+     */
     @Id
     private long id;
+
+    /**
+     * Имя пользователя.
+     */
     private String name;
+
+    /**
+     * Стартовое количество денег.
+     */
     private long money;
+
+    @JsonIgnore
+    private String password;
+    @Enumerated(EnumType.STRING)
+    @ElementCollection(fetch = FetchType.EAGER)
+    private List<Role> roles;
+
+    /**
+     * Лист предметов, которые есть в наличии у пользователя.
+     *
+     * @see List
+     */
     @ManyToMany
     @JoinTable(
             name = "inventory",
@@ -20,13 +51,68 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "item", referencedColumnName = "id")
     )
     private List<Item> inventory;
+    /**
+     * Квест которым пользователь в данный момент обладает.
+     *
+     * @see Quest
+     */
     @ManyToOne
     private Quest quest;
 
+    private boolean accountNonExpired, accountNonLocked, credentialsNonExpired, enabled;
+
+    /**
+     * Инициализирует объект класса {@link User}
+     * Инициализирует поля {@link User#id}, {@link User#name}, {@link User#money}
+     *
+     * @param user - Объект класса {@link User}
+     */
     public User(UserModel user) {
         this.id = user.getId();
         this.name = user.getName();
         this.money = user.getMoney();
+    }
+
+    public void grantAuthority(Role role){
+        if (roles == null) roles = new ArrayList<>();
+        roles.add(role);
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        List<GrantedAuthority> authorities = new ArrayList<>();
+        roles.forEach(role -> authorities.add(new SimpleGrantedAuthority(role.toString())));
+        return authorities;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return accountNonExpired;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return accountNonLocked;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return credentialsNonExpired;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return name;
     }
 
     public long getId() {
@@ -67,5 +153,17 @@ public class User {
 
     public void setQuest(Quest quest) {
         this.quest = quest;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
     }
 }

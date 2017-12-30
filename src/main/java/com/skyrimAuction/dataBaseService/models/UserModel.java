@@ -10,6 +10,9 @@ public class UserModel {
     private String name;
     private long money;
 
+    public UserModel() {
+    }
+
     public UserModel(User user) {
         this.id = user.getId();
         this.name = user.getName();

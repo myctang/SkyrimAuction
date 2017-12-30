@@ -43,6 +43,10 @@ public class UserService {
         return user;
     }
 
+    public User getUserByName(String name){
+        return server.find(User.class).where().eq("name", name).findOne();
+    }
+
     public User createUser(User user){
         server.save(user);
         return user;

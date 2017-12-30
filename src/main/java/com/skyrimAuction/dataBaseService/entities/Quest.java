@@ -3,14 +3,35 @@ package com.skyrimAuction.dataBaseService.entities;
 import javax.persistence.*;
 import java.util.List;
 
+/**
+ * Данный класс представляет собой Квест. Квестами могут владеть польщователи, за успешное выполнение квеста назанчен определенный {@link List} наград, в роли которых выступают {@link Item}.
+ *
+ */
 @Entity
 @Table(name="quests")
 public class Quest {
+    /**
+     * Код квеста.
+     */
     @Id
     private long id;
+    /**
+     * Название квеста.
+     */
     private String name;
+    /**
+     * Тип квеста. Сюжетный или нет.
+     */
     private boolean type;
+    /**
+     * Описание квеста.
+     */
     private String description;
+    /**
+     * Лист предметов, которые можно получить за успешное выполнение квеста.
+     *
+     * @see List
+     */
     @ManyToMany
     @JoinTable(
             name="rewards",
@@ -19,7 +40,6 @@ public class Quest {
     )
     private List<Item> rewards;
     @ManyToOne(optional = false)
-    private Quest currentQuest;
 
     public long getId() {
         return id;

@@ -4,6 +4,7 @@ import com.skyrimAuction.dataBaseService.entities.User;
 import com.skyrimAuction.dataBaseService.entities.query.assoc.QAssocItem;
 import com.skyrimAuction.dataBaseService.entities.query.assoc.QAssocQuest;
 import io.ebean.EbeanServer;
+import io.ebean.typequery.PBoolean;
 import io.ebean.typequery.PLong;
 import io.ebean.typequery.PString;
 import io.ebean.typequery.TQRootBean;
@@ -30,8 +31,13 @@ public class QUser extends TQRootBean<User,QUser> {
   public PLong<QUser> id;
   public PString<QUser> name;
   public PLong<QUser> money;
+  public PString<QUser> password;
   public QAssocItem<QUser> inventory;
   public QAssocQuest<QUser> quest;
+  public PBoolean<QUser> accountNonExpired;
+  public PBoolean<QUser> accountNonLocked;
+  public PBoolean<QUser> credentialsNonExpired;
+  public PBoolean<QUser> enabled;
 
 
   /**
@@ -63,7 +69,12 @@ public class QUser extends TQRootBean<User,QUser> {
     public static PLong<QUser> id = _alias.id;
     public static PString<QUser> name = _alias.name;
     public static PLong<QUser> money = _alias.money;
+    public static PString<QUser> password = _alias.password;
     public static QAssocItem<QUser> inventory = _alias.inventory;
     public static QAssocQuest<QUser> quest = _alias.quest;
+    public static PBoolean<QUser> accountNonExpired = _alias.accountNonExpired;
+    public static PBoolean<QUser> accountNonLocked = _alias.accountNonLocked;
+    public static PBoolean<QUser> credentialsNonExpired = _alias.credentialsNonExpired;
+    public static PBoolean<QUser> enabled = _alias.enabled;
   }
 }

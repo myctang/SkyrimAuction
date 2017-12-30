@@ -1,9 +1,6 @@
 alter table code drop foreign key fk_code_item_id;
 drop index ix_code_item_id on code;
 
-alter table quests drop foreign key fk_quests_current_quest_id;
-drop index ix_quests_current_quest_id on quests;
-
 alter table rewards drop foreign key fk_rewards_quests;
 drop index ix_rewards_quests on rewards;
 

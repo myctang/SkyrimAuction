@@ -1,14 +1,11 @@
-package com.skyrimAuction.dataBaseService.controllers;
+package com.skyrimAuction.controllers;
 
 import com.skyrimAuction.dataBaseService.entities.SellingItem;
 import com.skyrimAuction.dataBaseService.models.SellingItemModel;
 import com.skyrimAuction.dataBaseService.services.SellingItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +15,7 @@ public class SellingItemsController {
     @Autowired
     SellingItemService service;
 
-    @RequestMapping(value = "/selling", produces = "application/json")
+    @GetMapping(value = "/api/sellingItems/getAll", produces = "application/json")
     @ResponseBody
     public List<SellingItemModel> getItems(){
         List<SellingItemModel> result = new ArrayList<SellingItemModel>();
@@ -29,9 +26,23 @@ public class SellingItemsController {
         return result;
     }
 
-    @PostMapping(value = "/selling", consumes = "application/json")
+    @PostMapping(value = "/api/sellingItems", consumes = "application/json")
     @ResponseBody
     public SellingItemModel add(@RequestBody SellingItemModel item){
         return new SellingItemModel(service.save(new SellingItem(item)));
+    }
+
+    @DeleteMapping(value="/api/sellingItems", consumes = "application/json")
+    @ResponseBody
+    public boolean remove(@RequestBody Long id){
+        service.removeSellingItem(id);
+        return true;
+    }
+
+    @PutMapping(value = "/api/sellingItems", consumes = "application/json")
+    @ResponseBody
+    public SellingItem update(@RequestBody SellingItem sellingItem){
+        service.updateSellingItem(sellingItem);
+        return sellingItem;
     }
 }
