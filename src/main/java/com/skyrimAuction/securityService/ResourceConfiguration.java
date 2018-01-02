@@ -50,6 +50,8 @@ public class ResourceConfiguration extends ResourceServerConfigurerAdapter {
                 .authorizeRequests()
                     .antMatchers("/bone/*").permitAll().and()
                 .authorizeRequests()
+                    .antMatchers("/styles/*").permitAll().and()
+                .authorizeRequests()
                     .antMatchers("/lib/**").permitAll().and()
                 .authorizeRequests()
                     .antMatchers("/public/**").permitAll().and()

@@ -15,7 +15,7 @@ module.exports = {
                 options: {
                     presets: [
                         ["es2015", {modules: false}],
-                        "stage-2",
+                        // "env",
                         "react"
                     ],
                     plugins: [],

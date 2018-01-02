@@ -1,0 +1,22 @@
+header nav{
+    flex-grow: 2;
+}
+header h1{
+    overflow: hidden;
+}
+.buttons{
+    flex-grow: 1;
+    /*display: inline-block;*/
+}
+.buttons button{
+    margin-right: 10px;
+}
+.cabinet{
+    flex-grow: 1;
+    line-height: 36px;
+    text-align: right;
+    /*display: inline-block;*/
+}
+.navigate{
+    display: flex;
+}
