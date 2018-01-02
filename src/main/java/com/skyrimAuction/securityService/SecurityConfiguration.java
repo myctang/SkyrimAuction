@@ -39,8 +39,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter  {
                 .formLogin().disable()
                 .authorizeRequests().antMatchers("/static/index.html").permitAll().and()
                 .authorizeRequests().antMatchers("/").permitAll().and()
+                .authorizeRequests().antMatchers("/*").permitAll().and()
                 .authorizeRequests().antMatchers("/bone/*").permitAll().and()
                 .authorizeRequests().antMatchers("/lib/**").permitAll().and()
+                .authorizeRequests().antMatchers("/public/**").permitAll().and()
                 .authorizeRequests().antMatchers("/favicon.ico").permitAll().and()
                 .authorizeRequests().antMatchers("/api/registerUser").permitAll().and()
                 .authorizeRequests().anyRequest().authenticated();

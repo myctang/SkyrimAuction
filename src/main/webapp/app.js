@@ -1,28 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppBar from 'react-toolbox/lib/app_bar';
+import Navigation from 'react-toolbox/lib/navigation';
+import Button from 'react-toolbox/lib/Button';
+import Link from 'react-toolbox/lib/Link';
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles/main.css';
 import './images/Logo.png';
+import 'material-design-icons/iconfont/material-icons.css';
 
 class MainPage extends React.Component{
     render(){
-        return(
-            <div className="header container-fluid">
-                <div className="row">
-                    <div className="logo col-sm-3">
-                        <img src="./images/Logo.png" alt="Logo"/>
-                    </div>
-                    <div className="siteName col-sm-6">
-                        Аукцион
-                        <b>Скайримиум</b>
-                    </div>
-                    <div className="languages col-sm-1">
-                        Русский
-                    </div>
-                </div>
-            </div>
-        )
+        return (
+        <AppBar title='Skyrim Auction'>
+            <Navigation type='horizontal'>
+                <Button label="Купить"/>
+                <Button label="Продать"/>
+                <Button label="Лоты"/>
+                <Button label="Обмен"/>
+                <Button label="Задания"/>
+                <Link label="Личный кабинет"/>
+            </Navigation>
+        </AppBar>
+    )
     }
 }
 
