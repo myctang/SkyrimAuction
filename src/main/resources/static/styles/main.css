@@ -4,9 +4,13 @@ header nav{
 header h1{
     overflow: hidden;
 }
-.buttons{
+.buttonsMenu{
     flex-grow: 1;
     /*display: inline-block;*/
+}
+.buttons{
+    width: 510px;
+    margin: auto;
 }
 .buttons button{
     margin-right: 10px;
@@ -16,6 +20,13 @@ header h1{
     line-height: 36px;
     text-align: right;
     /*display: inline-block;*/
+}
+.cabinet a{
+    height: 36px;
+}
+.cabinet a:hover{
+    color: white;
+    text-decoration: none;
 }
 .navigate{
     display: flex;

@@ -10,12 +10,13 @@ module.exports = {
     module: {
         rules: [
             {
+                exclude: /node_modules/,
                 test: /\.js?$/,
                 loader: 'babel-loader',
                 options: {
                     presets: [
                         ["es2015", {modules: false}],
-                        // "env",
+                        // "stage-0",
                         "react"
                     ],
                     plugins: [],
