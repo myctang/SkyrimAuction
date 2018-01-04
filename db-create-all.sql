@@ -42,7 +42,13 @@ create table users (
   id                            bigint auto_increment not null,
   name                          varchar(255),
   money                         bigint not null,
+  password                      varchar(255),
+  roles                         varchar(1000),
   quest_id                      bigint,
+  account_non_expired           tinyint(1) default 0 not null,
+  account_non_locked            tinyint(1) default 0 not null,
+  credentials_non_expired       tinyint(1) default 0 not null,
+  enabled                       tinyint(1) default 0 not null,
   constraint pk_users primary key (id)
 );
 

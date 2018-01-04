@@ -1,6 +1,7 @@
 package com.skyrimAuction.dataBaseService.entities;
 
 import com.skyrimAuction.dataBaseService.models.UserModel;
+import io.ebean.annotation.DbArray;
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -35,8 +36,9 @@ public class User implements UserDetails {
 
     @JsonIgnore
     private String password;
-    @Enumerated(EnumType.STRING)
-    @ElementCollection(fetch = FetchType.EAGER)
+
+    @DbArray
+    @ElementCollection(targetClass = Role.class)
     private List<Role> roles;
 
     /**
@@ -51,6 +53,7 @@ public class User implements UserDetails {
             inverseJoinColumns = @JoinColumn(name = "item", referencedColumnName = "id")
     )
     private List<Item> inventory;
+
     /**
      * Квест которым пользователь в данный момент обладает.
      *
@@ -60,6 +63,13 @@ public class User implements UserDetails {
     private Quest quest;
 
     private boolean accountNonExpired, accountNonLocked, credentialsNonExpired, enabled;
+
+    public User() {
+        this.accountNonExpired = true;
+        this.accountNonLocked = true;
+        this.credentialsNonExpired = true;
+        this.enabled = true;
+    }
 
     /**
      * Инициализирует объект класса {@link User}
@@ -81,7 +91,10 @@ public class User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();
-        roles.forEach(role -> authorities.add(new SimpleGrantedAuthority(role.toString())));
+        for (Object role : roles){
+            authorities.add(new SimpleGrantedAuthority(role.toString()));
+        }
+//        roles.forEach(role -> );
         return authorities;
     }
 

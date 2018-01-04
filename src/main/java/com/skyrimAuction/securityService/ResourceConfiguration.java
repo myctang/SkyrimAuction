@@ -60,6 +60,8 @@ public class ResourceConfiguration extends ResourceServerConfigurerAdapter {
                 .authorizeRequests()
                     .antMatchers("/api/registerUser").permitAll().and()
                 .authorizeRequests()
+                    .antMatchers("/api/get/**").permitAll().and()
+                .authorizeRequests()
                 .antMatchers(HttpMethod.OPTIONS).permitAll()
                 .antMatchers("/api/admin").hasRole("ADMIN")
                 .antMatchers("/static/index.html").hasAnyAuthority("ROLE_USER", "ROLE_ANON")

@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { combineReducers } from 'redux';
+import { combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux'
+import thunk from 'redux-thunk'
 import $ from 'jquery';
 
 import AppBar from 'react-toolbox/lib/app_bar';
 import Navigation from 'react-toolbox/lib/navigation';
 import Button from 'react-toolbox/lib/Button';
 import Link from 'react-toolbox/lib/Link';
+import Buy from './components/Buy'
 
-import * as reducers from './reducers/any';
+import * as buyReducers from './reducers/buyReducer';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import '../resources/static/styles/main.css';
@@ -19,14 +21,15 @@ import 'material-design-icons/iconfont/material-icons.css';
 
 
 
-const reducer = combineReducers(reducers);
-const store = createStore(reducer, []);
+const reducer = combineReducers(buyReducers);
+debugger;
+const store = createStore(reducer, applyMiddleware(thunk));
 
 
 class MainPage extends React.Component{
     render(){
         return (
-            <Provider store={store}>
+            <div>
                 <AppBar title='Skyrim Auction'>
                     <Navigation type='horizontal' className="navigate">
                         <div className="buttonsMenu">
@@ -43,11 +46,14 @@ class MainPage extends React.Component{
                         </div>
                     </Navigation>
                 </AppBar>
-             </Provider>
-    )
+                <Buy />
+            </div>
+        )
     }
 }
 
 ReactDOM.render(
-    <MainPage />, document.getElementById('root')
+    <Provider store={store}>
+        <MainPage />
+    </Provider>, document.getElementById('root')
 );

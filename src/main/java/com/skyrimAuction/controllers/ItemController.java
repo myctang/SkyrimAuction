@@ -16,7 +16,7 @@ public class ItemController {
     @Autowired
     ItemService itemService;
 
-    @RequestMapping(value = "/items", produces = "application/json")
+    @RequestMapping(value = "/api/get/items", produces = "application/json")
     @ResponseBody
     public List<ItemModel> getItems(){
         List<ItemModel> result = new ArrayList<ItemModel>();

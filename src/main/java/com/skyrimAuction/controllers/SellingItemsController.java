@@ -15,7 +15,7 @@ public class SellingItemsController {
     @Autowired
     SellingItemService service;
 
-    @GetMapping(value = "/api/sellingItems/getAll", produces = "application/json")
+    @GetMapping(value = "/api/get/sellingItems/", produces = "application/json")
     @ResponseBody
     public List<SellingItemModel> getItems(){
         List<SellingItemModel> result = new ArrayList<SellingItemModel>();
