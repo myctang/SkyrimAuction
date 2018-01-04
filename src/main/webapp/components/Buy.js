@@ -12,14 +12,9 @@ class BuyList extends React.Component{
 
     render(){
         const items = [];
-        console.log("asds");
-        debugger;
         this.props.buyList.forEach((item) => {
             items.push(
-                <div>
-                    <p>{item.name}</p>
-                    <p>{item.id}</p>
-                </div>
+
             );
         });
         return (

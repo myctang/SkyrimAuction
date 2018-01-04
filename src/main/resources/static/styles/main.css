@@ -31,3 +31,16 @@ header h1{
 .navigate{
     display: flex;
 }
+
+.buyList{
+    width: 1000px;
+    margin: auto;
+    background: #4169E1;
+}
+.buyItemCard{
+    display: inline-block;
+    margin-right: 40px;
+}
+.buyItemCard:nth-child(3n){
+    margin-right: 0;
+}
