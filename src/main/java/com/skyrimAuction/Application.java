@@ -24,9 +24,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
         ApiContextInitializer.init();
         TelegramBotsApi botsApi = new TelegramBotsApi();
-        BotSession skyrimAuctionSession = null;
-
-            skyrimAuctionSession = botsApi.registerBot(new SkyrimAuctionTelegramBot());
+        BotSession skyrimAuctionSession = botsApi.registerBot(new SkyrimAuctionTelegramBot());
 
        while (true) {
             if (!skyrimAuctionSession.isRunning()) {
