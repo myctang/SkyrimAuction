@@ -29,7 +29,7 @@ public class SkyrimAuctionTelegramBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
-
+        sendMessage(update.getMessage(), "replying for: " + update.getMessage().getText());
     }
 
     @Override
