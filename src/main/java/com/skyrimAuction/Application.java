@@ -22,6 +22,7 @@ public class Application {
 
     public static void main(String[] args) throws TelegramApiRequestException {
         SpringApplication.run(Application.class, args);
+
         ApiContextInitializer.init();
         TelegramBotsApi botsApi = new TelegramBotsApi();
         BotSession skyrimAuctionSession = botsApi.registerBot(new SkyrimAuctionTelegramBot());

@@ -62,7 +62,7 @@ public class User implements UserDetails {
     @ManyToOne
     private Quest quest;
 
-    private long telegramID;
+    private int telegramID;
 
     private boolean accountNonExpired, accountNonLocked, credentialsNonExpired, enabled;
 
@@ -186,7 +186,7 @@ public class User implements UserDetails {
         return telegramID;
     }
 
-    public void setTelegramID(long telegramID) {
+    public void setTelegramID(int telegramID) {
         this.telegramID = telegramID;
     }
 }

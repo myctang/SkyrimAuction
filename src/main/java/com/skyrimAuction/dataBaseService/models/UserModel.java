@@ -10,7 +10,7 @@ public class UserModel {
     private long id;
     private String name;
     private long money;
-    private long telegramID;
+    private int telegramID;
 
     public UserModel() {
     }
@@ -49,7 +49,7 @@ public class UserModel {
         return telegramID;
     }
 
-    public void setTelegramID(long telegramID) {
+    public void setTelegramID(int telegramID) {
         this.telegramID = telegramID;
     }
 

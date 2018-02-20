@@ -7,6 +7,7 @@ import com.skyrimAuction.dataBaseService.entities.query.assoc.QAssocQuest;
 import io.ebean.EbeanServer;
 import io.ebean.typequery.PArray;
 import io.ebean.typequery.PBoolean;
+import io.ebean.typequery.PInteger;
 import io.ebean.typequery.PLong;
 import io.ebean.typequery.PString;
 import io.ebean.typequery.TQRootBean;
@@ -37,6 +38,7 @@ public class QUser extends TQRootBean<User,QUser> {
   public PArray<QUser,Role> roles;
   public QAssocItem<QUser> inventory;
   public QAssocQuest<QUser> quest;
+  public PInteger<QUser> telegramID;
   public PBoolean<QUser> accountNonExpired;
   public PBoolean<QUser> accountNonLocked;
   public PBoolean<QUser> credentialsNonExpired;
@@ -76,6 +78,7 @@ public class QUser extends TQRootBean<User,QUser> {
     public static PArray<QUser,Role> roles = _alias.roles;
     public static QAssocItem<QUser> inventory = _alias.inventory;
     public static QAssocQuest<QUser> quest = _alias.quest;
+    public static PInteger<QUser> telegramID = _alias.telegramID;
     public static PBoolean<QUser> accountNonExpired = _alias.accountNonExpired;
     public static PBoolean<QUser> accountNonLocked = _alias.accountNonLocked;
     public static PBoolean<QUser> credentialsNonExpired = _alias.credentialsNonExpired;
