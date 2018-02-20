@@ -13,7 +13,9 @@ import java.util.List;
 
 @Service
 public class UserService {
+
     public UserService() {
+
     }
 
     @Autowired
@@ -65,6 +67,7 @@ public class UserService {
         server.delete(User.class, id);
         return true;
     }
+
 
     @Transactional
     public User save(User user){

@@ -62,6 +62,8 @@ public class User implements UserDetails {
     @ManyToOne
     private Quest quest;
 
+    private long telegramID;
+
     private boolean accountNonExpired, accountNonLocked, credentialsNonExpired, enabled;
 
     public User() {
@@ -178,5 +180,13 @@ public class User implements UserDetails {
 
     public void setRoles(List<Role> roles) {
         this.roles = roles;
+    }
+
+    public long getTelegramID() {
+        return telegramID;
+    }
+
+    public void setTelegramID(long telegramID) {
+        this.telegramID = telegramID;
     }
 }
