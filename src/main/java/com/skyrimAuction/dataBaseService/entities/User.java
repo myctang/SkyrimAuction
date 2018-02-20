@@ -68,6 +68,8 @@ public class User implements UserDetails {
     @Column(columnDefinition = "datetime")
     private Timestamp startOfQuest;
 
+    private int telegramID;
+
     private boolean accountNonExpired, accountNonLocked, credentialsNonExpired, enabled;
 
     public User() {
@@ -186,11 +188,20 @@ public class User implements UserDetails {
         this.roles = roles;
     }
 
+
     public Timestamp getStartOfQuest() {
         return startOfQuest;
     }
 
     public void setStartOfQuest(Timestamp startOfQuest) {
         this.startOfQuest = startOfQuest;
+    }
+    
+    public long getTelegramID() {
+        return telegramID;
+    }
+
+    public void setTelegramID(int telegramID) {
+        this.telegramID = telegramID;
     }
 }

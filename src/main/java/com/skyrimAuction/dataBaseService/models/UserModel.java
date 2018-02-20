@@ -6,9 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserModel {
+
     private long id;
     private String name;
     private long money;
+    private int telegramID;
 
     public UserModel() {
     }
@@ -42,4 +44,13 @@ public class UserModel {
     public void setMoney(long money) {
         this.money = money;
     }
+
+    public long getTelegramID() {
+        return telegramID;
+    }
+
+    public void setTelegramID(int telegramID) {
+        this.telegramID = telegramID;
+    }
+
 }
