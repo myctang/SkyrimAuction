@@ -2,21 +2,24 @@ package com.skyrimAuction.dataBaseService.models;
 
 import com.skyrimAuction.dataBaseService.entities.SellingItem;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 public class SellingItemModel {
 
     private long id;
     private ItemModel item;
     private int price;
-    private Date sellingStart;
+    private Timestamp sellingStart;
     private long duration;
+
+    public SellingItemModel() {
+    }
 
     public SellingItemModel(SellingItem item) {
         this.id = item.getId();
         this.item = new ItemModel(item.getItem());
         this.price = item.getPrice();
-        this.sellingStart = item.getSellingStart();
+        this.sellingStart = item.getSellingEnd();
         this.duration = item.getDuration();
     }
 
@@ -44,11 +47,11 @@ public class SellingItemModel {
         this.price = price;
     }
 
-    public Date getSellingStart() {
+    public Timestamp getSellingStart() {
         return sellingStart;
     }
 
-    public void setSellingStart(Date sellingStart) {
+    public void setSellingStart(Timestamp sellingStart) {
         this.sellingStart = sellingStart;
     }
 

@@ -2,9 +2,10 @@ package com.skyrimAuction.dataBaseService.entities.query.assoc;
 
 import com.skyrimAuction.dataBaseService.entities.SellingItem;
 import com.skyrimAuction.dataBaseService.entities.query.QSellingItem;
+import io.ebean.typequery.PBoolean;
 import io.ebean.typequery.PInteger;
 import io.ebean.typequery.PLong;
-import io.ebean.typequery.PSqlDate;
+import io.ebean.typequery.PTimestamp;
 import io.ebean.typequery.TQAssocBean;
 import io.ebean.typequery.TQProperty;
 import io.ebean.typequery.TypeQueryBean;
@@ -20,8 +21,12 @@ public class QAssocSellingItem<R> extends TQAssocBean<SellingItem,R> {
   public PLong<R> id;
   public QAssocItem<R> item;
   public PInteger<R> price;
-  public PSqlDate<R> sellingStart;
+  public PInteger<R> buyNowPrice;
+  public PBoolean<R> finished;
+  public PTimestamp<R> sellingEnd;
   public PLong<R> duration;
+  public QAssocUser<R> holder;
+  public QAssocUser<R> lastBidder;
 
   /**
    * Eagerly fetch this association loading the specified properties.

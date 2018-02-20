@@ -7,6 +7,7 @@ import io.ebean.typequery.PArray;
 import io.ebean.typequery.PBoolean;
 import io.ebean.typequery.PLong;
 import io.ebean.typequery.PString;
+import io.ebean.typequery.PTimestamp;
 import io.ebean.typequery.TQAssocBean;
 import io.ebean.typequery.TQProperty;
 import io.ebean.typequery.TypeQueryBean;
@@ -24,8 +25,8 @@ public class QAssocUser<R> extends TQAssocBean<User,R> {
   public PLong<R> money;
   public PString<R> password;
   public PArray<R,Role> roles;
-  public QAssocItem<R> inventory;
   public QAssocQuest<R> quest;
+  public PTimestamp<R> startOfQuest;
   public PBoolean<R> accountNonExpired;
   public PBoolean<R> accountNonLocked;
   public PBoolean<R> credentialsNonExpired;

@@ -2,31 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cf2c2c9-a406-4b4b-97ef-b7439b2903a5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/AccountController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/reducers/buyReducer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/auctionService/AuctionItemsService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/auctionService/QuestsWithRewardsService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/InventoryItem.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/InventoryService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/responseExeption/NotAcceptableExeption.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/actions/mySellActions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/actions/questsActions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/actions/sellActions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/actions/userActions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/components/CurrentQuest.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/components/Login.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/components/MainPage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/components/MainRouting.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/components/MySellItems.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/components/QuestItem.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/components/Quests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/components/Sell.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/components/SellItem.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/reducers/loginReducer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/reducers/mySellingReducer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/reducers/questsReducer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/reducers/sellReducer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/reducers/userReducer.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/SkyrimAuction.iml" afterPath="$PROJECT_DIR$/SkyrimAuction.iml" />
       <change beforePath="$PROJECT_DIR$/db-create-all.sql" afterPath="$PROJECT_DIR$/db-create-all.sql" />
       <change beforePath="$PROJECT_DIR$/db-drop-all.sql" afterPath="$PROJECT_DIR$/db-drop-all.sql" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/ItemController.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/ItemController.java" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/QuestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/QuestController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/SellingItemsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/SellingItemsController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Role.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Role.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Item.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Item.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Quest.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Quest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/SellingItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/SellingItem.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/SellingItemModel.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/SellingItemModel.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AccountService.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AccountService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/ResourceConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/ResourceConfiguration.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/SecurityConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/SecurityConfiguration.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ebean.properties" afterPath="$PROJECT_DIR$/src/main/resources/ebean.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/main.css" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/main.css" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/actions/buyActions.js" afterPath="$PROJECT_DIR$/src/main/webapp/actions/buyActions.js" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/app.js" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/components/Buy.js" afterPath="$PROJECT_DIR$/src/main/webapp/components/Buy.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/components/BuyItem.js" afterPath="$PROJECT_DIR$/src/main/webapp/components/BuyItem.js" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/constants/actionsType.js" afterPath="$PROJECT_DIR$/src/main/webapp/constants/actionsType.js" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/public/bundle.js" afterPath="$PROJECT_DIR$/src/main/webapp/public/bundle.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/reducers/any.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/reducers/buyReducer.js" afterPath="$PROJECT_DIR$/src/main/webapp/reducers/buyReducer.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/utils/devTools.js" afterPath="$PROJECT_DIR$/src/main/webapp/actions/loginAction.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/Application.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/Application.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/Item.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/Item.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/SellingItem.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/SellingItem.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/User.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/User.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QSellingItem$Alias.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QSellingItem$Alias.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QSellingItem.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QSellingItem.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QUser$Alias.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QUser$Alias.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QUser.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/QUser.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocSellingItem.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocSellingItem.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocUser.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocUser.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/models/SellingItemModel.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/models/SellingItemModel.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/services/SellingItemService.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/services/SellingItemService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/services/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/skyrimAuction/dataBaseService/services/UserService.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ebean.properties" afterPath="$PROJECT_DIR$/target/classes/ebean.properties" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/QSellingItem.java" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/QSellingItem.java" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/QUser.java" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/QUser.java" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocSellingItem.java" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocSellingItem.java" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocUser.java" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/skyrimAuction/dataBaseService/entities/query/assoc/QAssocUser.java" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,6 +82,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SkyrimAuction$Application.coverage" NAME="Application Coverage Results" MODIFIED="1515330982948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -50,83 +99,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SellingItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/SellingItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="776">
+              <caret line="70" column="6" lean-forward="false" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SellingItemsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/SellingItemsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="47" />
+            <state relative-caret-position="255">
+              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/ItemController.java">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buyReducer.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/reducers/buyReducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Buy.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/components/Buy.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buyActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/actions/buyActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            <state relative-caret-position="391">
+              <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="60" />
               <folding>
-                <element signature="e#0#63#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devTools.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/utils/devTools.js">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actionsType.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/constants/actionsType.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            <state relative-caret-position="280">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,6 +171,26 @@
       <find>maven-</find>
       <find>th</find>
       <find>success</find>
+      <find>displayName</find>
+      <find>display</find>
+      <find>deb</find>
+      <find>redux/</find>
+      <find>bindActionCreators</find>
+      <find>cook</find>
+      <find>default</find>
+      <find>export</find>
+      <find>coo</find>
+      <find>action</find>
+      <find>name</find>
+      <find>.item</find>
+      <find>authoriti</find>
+      <find>setState</find>
+      <find>token</find>
+      <find>pass</find>
+      <find>BuyList</find>
+      <find>style</find>
+      <find>min</find>
+      <find>buyNowPrice</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,57 +204,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/components/MainPage.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/components/MainPage.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/test.jsx" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/styles/MainPage.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/public/components/MainPage.jsx" />
-        <option value="$PROJECT_DIR$/src/app.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/app.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Code.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/reducers/sellReducer.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Quest.java" />
-        <option value="$PROJECT_DIR$/db-create-all.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/SellingItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/CodeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/ItemService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/SellingItemsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/ItemController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/QuestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/UserModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/QuestService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/controllers/UserController.java" />
-        <option value="$PROJECT_DIR$/package-lock.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AccountService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/responseExeption/NotAcceptableExeption.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/auctionService/SellingItemService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/auctionService/QuestsService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/actions/loginAction.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/auctionService/QuestsWithRewards.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/QuestController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/reducers/userReducer.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/reducers/userReducer.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/CurrentQuest.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/reducers/questsReducer.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/Quests.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/QuestItem.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/actions/questsActions.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AuthorizationConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/CodeController.java" />
-        <option value="$PROJECT_DIR$/preact.config.js" />
-        <option value="$PROJECT_DIR$/postcss.config.js" />
-        <option value="$PROJECT_DIR$/node_modules/material-design-icons/iconfont/material-icons.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/styles/main.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/styles/main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/utils/devTools.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/reducers/any.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/SellingItemsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/ResourceConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/AccountController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/ebean.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/SecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/ItemModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/ItemController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/constants/actionsType.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/IntentoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/InventoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/InventoryItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AccountService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/auctionService/QuestsWithRewardsService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/BuyNow.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/actions/buyActions.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/Login.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/actions/sellActions.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/actions/userActions.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/MainPage.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/Sell.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/SellingItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/auctionService/AuctionItemsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/constants/actionsType.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/reducers/mySellingReducer.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/actions/mySellActions.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/reducers/buyReducer.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/BuyItem.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/ebean.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/SellItem.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/MainRouting.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/components/Buy.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/components/MySellItems.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/styles/main.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/SellingItemsController.java" />
       </list>
     </option>
   </component>
@@ -277,8 +316,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -345,35 +383,6 @@
               <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="skyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="dataBaseService" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="skyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="dataBaseService" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="skyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="securityService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -389,54 +398,23 @@
               <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
               <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SkyrimAuction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SkyrimAuction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,14 +439,15 @@
     <property name="project.structure.proportion" value="0.16113281" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/Users/Igor/IdeaProjects/SkyrimAuction/src/main/webapp/components/SellItem.js" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Users\Igor\IdeaProjects\SkyrimAuction\src\main\webapp\libs" />
+      <recent name="F:\Users\Igor\IdeaProjects\SkyrimAuction\src\main\resources\static" />
+      <recent name="F:\Users\Igor\IdeaProjects\SkyrimAuction\node_modules" />
       <recent name="C:\Users\Igor\IdeaProjects\SkyrimAuction\src\main\resources\static" />
       <recent name="C:\Users\Igor\IdeaProjects\SkyrimAuction\src\main\webapp" />
-      <recent name="C:\Users\Igor\IdeaProjects\SkyrimAuction\src\main\resources\static\styles" />
-      <recent name="C:\Users\Igor\IdeaProjects\SkyrimAuction\src\main\resources" />
-      <recent name="C:\Users\Igor\IdeaProjects\SkyrimAuction\src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.skyrimAuction" />
@@ -624,12 +603,38 @@
       <workItem from="1514884455149" duration="1054000" />
       <workItem from="1514988775218" duration="7000" />
       <workItem from="1514995161092" duration="12688000" />
-      <workItem from="1515056408664" duration="10000" />
+      <workItem from="1515056408664" duration="617000" />
+      <workItem from="1515060249795" duration="16047000" />
+      <workItem from="1515094036133" duration="9054000" />
+      <workItem from="1515171956916" duration="8493000" />
+      <workItem from="1515228814654" duration="19330000" />
+      <workItem from="1515328980227" duration="12148000" />
+      <workItem from="1515348576130" duration="8622000" />
+      <workItem from="1515436082616" duration="3914000" />
+      <workItem from="1515497397038" duration="14884000" />
+      <workItem from="1515579219588" duration="2599000" />
+      <workItem from="1515664249331" duration="8265000" />
+      <workItem from="1515753288772" duration="24000" />
+      <workItem from="1518385919909" duration="777000" />
+      <workItem from="1518427302817" duration="6812000" />
+      <workItem from="1518553156524" duration="4171000" />
+      <workItem from="1518599524135" duration="10703000" />
+      <workItem from="1518634281933" duration="3586000" />
+      <workItem from="1518799062494" duration="5012000" />
+      <workItem from="1519143052270" duration="7251000" />
     </task>
+    <task id="LOCAL-00001" summary="Some some changes">
+      <created>1515056486088</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1515056486088</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135679000" />
+    <option name="totallyTimeSpent" value="277978000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -642,77 +647,45 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25692964" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25692964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39895833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.340625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29850745" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23134328" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2572973" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34169653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26486486" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -720,65 +693,114 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Some some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some some changes" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AccountService.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AccountService.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AccountService.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/AccountController.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/SellingItemsController.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/SellingItemsController.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/SellingItemsController.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="42" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="account.inventory" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>PropertyChangeEvent evt = this._ebean_intercept.preSetter(true, 1, this._ebean_get_name(), newValue)</expression-string>
+        <expression-string>item.getBuyNowPrice()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this._ebean_intercept.preSetter(true, 1, this._ebean_get_name(), newValue)</expression-string>
+        <expression-string>item.getPrice() &gt;= item.getBuyNowPrice()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this._ebean_intercept.preSetter(true, 4, this._ebean_get_damage(), newValue)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>io.ebean.bean.EntityBeanIntercept</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this._ebean_intercept.preSetter(true, 4, new Integer(0), new Integer(23))</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>io.ebean.bean.EntityBeanIntercept</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this._ebean_intercept.preSetter(true, 4, 0, 23)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>io.ebean.bean.EntityBeanIntercept</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((EntityBeanIntercept) this._ebean_intercept).preSetter(true, 4, 0, 23)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>io.ebean.bean.EntityBeanIntercept</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this._ebean_intercept</expression-string>
+        <expression-string>item.getPrice() &lt;= 0</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>newValue</expression-string>
+        <expression-string>itemFromBase.getPrice() &gt; item.getPrice()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this._ebean_get_damage()</expression-string>
+        <expression-string>item.getPrice() &gt; bidder.getMoney()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this._ebean_get_damage().class</expression-string>
+        <expression-string>Ebean.findNative(InventoryItem.class, &quot;select inventoryItems.id, item_id, user_id, quantity from inventoryItems join users on user_id=users.id where users.name=':username'&quot;).setParameter(&quot;username&quot;, username).findList()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Ebean.findNative(InventoryItem.class, &quot;select inventoryItems.id, item_id, user_id, quantity from inventoryItems join users on user_id=users.id where users.name='test6'&quot;).setParameter(&quot;username&quot;, username).findList()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Ebean.findNative(InventoryItem.class, &quot;select inventoryItems.id, item_id, user_id, quantity from inventoryItems join users on user_id=users.id&quot;).setParameter(&quot;username&quot;, username).findList()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Ebean.findNative(InventoryItem.class, &quot;select inventoryItems.id, item_id, user_id, quantity from inventoryItems join users on user_id=users.id where users.name=':username' AND item_id=:itemId&quot;).setParameter(&quot;username&quot;, username).getRawSql()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -788,358 +810,423 @@
     <option name="enabled" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react-toolbox/src/components/card/readme.md" />
-    <entry file="file://$PROJECT_DIR$/node_modules/react-toolbox/src/components/card/theme.css" />
-    <entry file="file://$PROJECT_DIR$/node_modules/react-toolbox/src/components/card/Card.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/react-toolbox/lib/navigation/Navigation.d.ts" />
-    <entry file="file://$PROJECT_DIR$/preact.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/postcss.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3315">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-toolbox/src/components/app_bar/AppBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="127" column="27" lean-forward="false" selection-start-line="127" selection-start-column="27" selection-end-line="127" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/material-design-icons/alert/1x_web/ic_add_alert_black_24dp.png" />
-    <entry file="file://$PROJECT_DIR$/node_modules/material-design-icons/toggle/svg/design/ic_check_box_24px.svg" />
-    <entry file="file://$PROJECT_DIR$/node_modules/material-design-icons/toggle/svg/design/ic_check_box_48px.svg" />
-    <entry file="file://$PROJECT_DIR$/node_modules/material-design-icons/communication/svg/production/ic_contacts_48px.svg" />
-    <entry file="file://$PROJECT_DIR$/node_modules/material-design-icons/communication/svg/production/ic_contacts_24px.svg" />
-    <entry file="file://$PROJECT_DIR$/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/material-design-icons/iconfont/material-icons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux-devtools/lib/index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/redux-devtools/lib/persistState.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux-devtools/lib/createDevTools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux/lib/createStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/reducers/any.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/SellingItemModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AuthorizationConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/CodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/ebean/ebean/11.1.1/ebean-11.1.1.jar!/io/ebeaninternal/server/deploy/BeanPropertyAssocMany.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="485" column="0" lean-forward="false" selection-start-line="485" selection-start-column="0" selection-end-line="485" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ebean.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="73" lean-forward="true" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="92" column="38" lean-forward="false" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;field#name#0;class#User#0" expanded="false" />
-            <element signature="docComment;field#money#0;class#User#0" expanded="false" />
-            <element signature="docComment;field#inventory#0;class#User#0" expanded="false" />
-            <element signature="docComment;field#quest#0;class#User#0" expanded="false" />
-            <element signature="docComment;method#User#1;class#User#0" expanded="false" />
-            <element signature="e#2666#2667#0" expanded="false" />
-            <element signature="e#2706#2707#0" expanded="false" />
-            <element signature="e#2763#2764#0" expanded="false" />
-            <element signature="e#2802#2803#0" expanded="false" />
-            <element signature="e#2864#2865#0" expanded="false" />
-            <element signature="e#2908#2909#0" expanded="false" />
-            <element signature="e#2956#2957#0" expanded="false" />
-            <element signature="e#2986#2987#0" expanded="false" />
-            <element signature="e#3035#3036#0" expanded="false" />
-            <element signature="e#3066#3067#0" expanded="false" />
-            <element signature="e#3115#3116#0" expanded="false" />
-            <element signature="e#3142#3143#0" expanded="false" />
-            <element signature="e#3169#3170#0" expanded="false" />
-            <element signature="e#3194#3195#0" expanded="false" />
-            <element signature="e#3228#3229#0" expanded="false" />
-            <element signature="e#3256#3257#0" expanded="false" />
-            <element signature="e#3287#3288#0" expanded="false" />
-            <element signature="e#3314#3315#0" expanded="false" />
-            <element signature="e#3354#3355#0" expanded="false" />
-            <element signature="e#3386#3387#0" expanded="false" />
-            <element signature="e#3416#3417#0" expanded="false" />
-            <element signature="e#3444#3445#0" expanded="false" />
-            <element signature="e#3484#3485#0" expanded="false" />
-            <element signature="e#3518#3519#0" expanded="false" />
-            <element signature="e#3558#3559#0" expanded="false" />
-            <element signature="e#3590#3591#0" expanded="false" />
-            <element signature="e#3644#3645#0" expanded="false" />
-            <element signature="e#3686#3687#0" expanded="false" />
-            <element signature="e#3717#3718#0" expanded="false" />
-            <element signature="e#3745#3746#0" expanded="false" />
-            <element signature="e#3786#3787#0" expanded="false" />
-            <element signature="e#3820#3821#0" expanded="false" />
-            <element signature="e#3868#3869#0" expanded="false" />
-            <element signature="e#3908#3909#0" expanded="false" />
-            <element signature="e#3944#3945#0" expanded="false" />
-            <element signature="e#3972#3973#0" expanded="false" />
-            <element signature="e#4018#4019#0" expanded="false" />
-            <element signature="e#4052#4053#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/ResourceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="60" column="51" lean-forward="false" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/SecurityConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/models/ItemModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/SellingItemsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/ItemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jquery/src/ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="709" column="25" lean-forward="false" selection-start-line="709" selection-start-column="18" selection-end-line="709" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux/webpack.config.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/utils/devTools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/constants/actionsType.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="85">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-254">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/EbeanFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/InventoryItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#599#600#0" expanded="false" />
+            <element signature="e#624#625#0" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+            <element signature="e#686#687#0" expanded="false" />
+            <element signature="e#715#716#0" expanded="false" />
+            <element signature="e#742#743#0" expanded="false" />
+            <element signature="e#780#781#0" expanded="false" />
+            <element signature="e#812#813#0" expanded="false" />
+            <element signature="e#841#842#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#906#907#0" expanded="false" />
+            <element signature="e#938#939#0" expanded="false" />
+            <element signature="e#970#971#0" expanded="false" />
+            <element signature="e#1001#1002#0" expanded="false" />
+            <element signature="e#1046#1047#0" expanded="false" />
+            <element signature="e#1086#1087#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/CodeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/BuyNow.js" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/actions/buyActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        <state relative-caret-position="623">
+          <caret line="105" column="55" lean-forward="false" selection-start-line="105" selection-start-column="55" selection-end-line="105" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/securityService/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/Util.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.1.3.RELEASE/spring-security-core-4.1.3.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/ebean/ebean/11.1.1/ebean-11.1.1.jar!/io/ebean/Query.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="111" column="13" lean-forward="false" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/actions/loginAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/actions/userActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/reducers/questsReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/QuestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/auctionService/QuestsWithRewardsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="51" column="55" lean-forward="false" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/auctionService/AuctionItemsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="62" column="42" lean-forward="false" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/QuestItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/InventoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/SellingItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
           <folding>
-            <element signature="e#0#63#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/actions/questsActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/reducers/sellReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/constants/actionsType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/actions/sellActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/reducers/loginReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/reducers/userReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/reducers/mySellingReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/actions/mySellActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ebean.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/SellItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="38" column="196" lean-forward="false" selection-start-line="38" selection-start-column="196" selection-end-line="38" selection-end-column="196" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/MainPageWithRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/MainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/Sell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/MainRouting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/CurrentQuest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/components/Buy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state relative-caret-position="340">
+          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+            <marker date="1518802861571" expanded="true" signature="1103:1128" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/BuyItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="58" column="37" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="58" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="70" column="6" lean-forward="false" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/reducers/buyReducer.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/components/MySellItems.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/dataBaseService/entities/SellingItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/4.3.13.RELEASE/spring-messaging-4.3.13.RELEASE.jar!/org/springframework/messaging/simp/SimpMessagingTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/controllers/SellingItemsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/skyrimAuction/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

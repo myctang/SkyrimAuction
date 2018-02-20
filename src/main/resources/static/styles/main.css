@@ -1,46 +1,73 @@
-header nav{
+header nav {
     flex-grow: 2;
 }
-header h1{
+
+header h1 {
     overflow: hidden;
 }
-.buttonsMenu{
+
+.buttonsMenu {
     flex-grow: 1;
     /*display: inline-block;*/
 }
-.buttons{
+
+.buttons {
     width: 510px;
     margin: auto;
 }
-.buttons button{
+
+.buttons button {
     margin-right: 10px;
 }
-.cabinet{
+
+.cabinet {
     flex-grow: 1;
     line-height: 36px;
     text-align: right;
     /*display: inline-block;*/
 }
-.cabinet a{
+
+.cabinet a {
     height: 36px;
 }
-.cabinet a:hover{
+
+.cabinet a:hover {
     color: white;
     text-decoration: none;
 }
-.navigate{
+
+.navigate {
     display: flex;
 }
 
-.buyList{
+.buyList {
     width: 1000px;
     margin: auto;
     background: #4169E1;
 }
-.buyItemCard{
+
+.buyItemCard {
     display: inline-block;
-    margin-right: 40px;
+    margin: 20px 30px 10px 10px;
 }
-.buyItemCard:nth-child(3n){
+
+.buyItemCard:nth-child(3n) {
     margin-right: 0;
+}
+
+.error {
+    display: none;
+    color: red;
+}
+
+.currentQuest {
+    background: lightgreen;
+}
+
+.myBid {
+    background: lightgreen;
+}
+
+.red {
+    color: red;
 }

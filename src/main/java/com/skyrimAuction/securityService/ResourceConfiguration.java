@@ -58,14 +58,19 @@ public class ResourceConfiguration extends ResourceServerConfigurerAdapter {
                 .authorizeRequests()
                     .antMatchers("/favicon.ico").permitAll().and()
                 .authorizeRequests()
+                    .antMatchers("/jquery-cookie/**").permitAll().and()
+                .authorizeRequests()
                     .antMatchers("/api/registerUser").permitAll().and()
                 .authorizeRequests()
                     .antMatchers("/api/get/**").permitAll().and()
                 .authorizeRequests()
+                    .antMatchers("/updateItems/**").permitAll().and()
+                .authorizeRequests()
                 .antMatchers(HttpMethod.OPTIONS).permitAll()
                 .antMatchers("/api/admin").hasRole("ADMIN")
                 .antMatchers("/static/index.html").hasAnyAuthority("ROLE_USER", "ROLE_ANON")
-                .antMatchers("/api/**").authenticated();
+                .antMatchers("/api/**").authenticated()
+                .antMatchers("/user/**").authenticated();
     }
 
     private static class OAuthRequestedMatcher implements RequestMatcher {

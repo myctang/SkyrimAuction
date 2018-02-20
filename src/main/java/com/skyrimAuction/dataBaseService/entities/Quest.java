@@ -23,6 +23,8 @@ public class Quest {
      * Тип квеста. Сюжетный или нет.
      */
     private boolean type;
+
+    private long duration;
     /**
      * Описание квеста.
      */
@@ -79,5 +81,13 @@ public class Quest {
 
     public void setRewards(List<Item> rewards) {
         this.rewards = rewards;
+    }
+
+    public long getDuration() {
+        return duration;
+    }
+
+    public void setDuration(long duration) {
+        this.duration = duration;
     }
 }

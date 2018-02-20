@@ -16,8 +16,12 @@ public class SellingItemService {
     @Autowired
     EbeanServer server;
 
-    public List<SellingItem> getSellingItems(){
-        return server.find(SellingItem.class).findList();
+    public List<SellingItem> getCurrentSellingItems(){
+        return server.find(SellingItem.class).where().eq("finished", "false").findList();
+    }
+
+    public List<SellingItem> getMySellingItems(long id){
+        return server.find(SellingItem.class).where().eq("holder_id", id).findList();
     }
 
     public SellingItem getSellingItem(long id){

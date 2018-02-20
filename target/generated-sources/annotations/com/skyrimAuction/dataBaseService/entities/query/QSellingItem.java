@@ -2,10 +2,12 @@ package com.skyrimAuction.dataBaseService.entities.query;
 
 import com.skyrimAuction.dataBaseService.entities.SellingItem;
 import com.skyrimAuction.dataBaseService.entities.query.assoc.QAssocItem;
+import com.skyrimAuction.dataBaseService.entities.query.assoc.QAssocUser;
 import io.ebean.EbeanServer;
+import io.ebean.typequery.PBoolean;
 import io.ebean.typequery.PInteger;
 import io.ebean.typequery.PLong;
-import io.ebean.typequery.PSqlDate;
+import io.ebean.typequery.PTimestamp;
 import io.ebean.typequery.TQRootBean;
 import io.ebean.typequery.TypeQueryBean;
 
@@ -30,8 +32,12 @@ public class QSellingItem extends TQRootBean<SellingItem,QSellingItem> {
   public PLong<QSellingItem> id;
   public QAssocItem<QSellingItem> item;
   public PInteger<QSellingItem> price;
-  public PSqlDate<QSellingItem> sellingStart;
+  public PInteger<QSellingItem> buyNowPrice;
+  public PBoolean<QSellingItem> finished;
+  public PTimestamp<QSellingItem> sellingEnd;
   public PLong<QSellingItem> duration;
+  public QAssocUser<QSellingItem> holder;
+  public QAssocUser<QSellingItem> lastBidder;
 
 
   /**
@@ -63,7 +69,11 @@ public class QSellingItem extends TQRootBean<SellingItem,QSellingItem> {
     public static PLong<QSellingItem> id = _alias.id;
     public static QAssocItem<QSellingItem> item = _alias.item;
     public static PInteger<QSellingItem> price = _alias.price;
-    public static PSqlDate<QSellingItem> sellingStart = _alias.sellingStart;
+    public static PInteger<QSellingItem> buyNowPrice = _alias.buyNowPrice;
+    public static PBoolean<QSellingItem> finished = _alias.finished;
+    public static PTimestamp<QSellingItem> sellingEnd = _alias.sellingEnd;
     public static PLong<QSellingItem> duration = _alias.duration;
+    public static QAssocUser<QSellingItem> holder = _alias.holder;
+    public static QAssocUser<QSellingItem> lastBidder = _alias.lastBidder;
   }
 }

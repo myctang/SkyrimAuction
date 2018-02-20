@@ -2,21 +2,28 @@ package com.skyrimAuction.dataBaseService.entities;
 
 import com.skyrimAuction.dataBaseService.models.UserModel;
 import io.ebean.annotation.DbArray;
-import org.codehaus.jackson.annotate.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.ebean.annotation.DbJson;
+import io.ebean.annotation.DbJsonB;
+import io.ebean.annotation.DbJsonType;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Данный класс представляет собой зарегистрированного пользователя.
  */
 @Entity
-@Table(name="users")
+@Table(name = "users")
+@JsonIgnoreProperties({"password", "roles"})
 public class User implements UserDetails {
     /**
      * Код пользователя.
@@ -27,6 +34,7 @@ public class User implements UserDetails {
     /**
      * Имя пользователя.
      */
+    @Column(unique = true)
     private String name;
 
     /**
@@ -34,25 +42,20 @@ public class User implements UserDetails {
      */
     private long money;
 
-    @JsonIgnore
     private String password;
 
     @DbArray
     @ElementCollection(targetClass = Role.class)
+    @JsonIgnore
     private List<Role> roles;
 
-    /**
-     * Лист предметов, которые есть в наличии у пользователя.
-     *
-     * @see List
-     */
-    @ManyToMany
-    @JoinTable(
-            name = "inventory",
-            joinColumns = @JoinColumn(name = "owner", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "item", referencedColumnName = "id")
-    )
-    private List<Item> inventory;
+//    /**
+//     * Лист предметов, которые есть в наличии у пользователя.
+//     *
+//     * @see List
+//     */
+//    @OneToMany
+//    private List<InventoryItem> inventory;
 
     /**
      * Квест которым пользователь в данный момент обладает.
@@ -61,6 +64,9 @@ public class User implements UserDetails {
      */
     @ManyToOne
     private Quest quest;
+
+    @Column(columnDefinition = "datetime")
+    private Timestamp startOfQuest;
 
     private boolean accountNonExpired, accountNonLocked, credentialsNonExpired, enabled;
 
@@ -83,7 +89,7 @@ public class User implements UserDetails {
         this.money = user.getMoney();
     }
 
-    public void grantAuthority(Role role){
+    public void grantAuthority(Role role) {
         if (roles == null) roles = new ArrayList<>();
         roles.add(role);
     }
@@ -91,10 +97,9 @@ public class User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();
-        for (Object role : roles){
+        for (Object role : roles) {
             authorities.add(new SimpleGrantedAuthority(role.toString()));
         }
-//        roles.forEach(role -> );
         return authorities;
     }
 
@@ -152,13 +157,13 @@ public class User implements UserDetails {
         this.money = money;
     }
 
-    public List<Item> getInventory() {
-        return inventory;
-    }
-
-    public void setInventory(List<Item> inventory) {
-        this.inventory = inventory;
-    }
+//    public List<InventoryItem> getInventory() {
+//        return inventory;
+//    }
+//
+//    public void setInventory(List<InventoryItem> inventory) {
+//        this.inventory = inventory;
+//    }
 
     public Quest getQuest() {
         return quest;
@@ -172,11 +177,20 @@ public class User implements UserDetails {
         this.password = password;
     }
 
+    @JsonIgnore
     public List<Role> getRoles() {
         return roles;
     }
 
     public void setRoles(List<Role> roles) {
         this.roles = roles;
+    }
+
+    public Timestamp getStartOfQuest() {
+        return startOfQuest;
+    }
+
+    public void setStartOfQuest(Timestamp startOfQuest) {
+        this.startOfQuest = startOfQuest;
     }
 }

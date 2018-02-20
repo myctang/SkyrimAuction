@@ -2,17 +2,14 @@ package com.skyrimAuction.dataBaseService.entities;
 
 import com.skyrimAuction.dataBaseService.models.SellingItemModel;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import java.sql.Date;
+import javax.persistence.*;
+import java.sql.Timestamp;
 
 /**
  * Данный класс представлет собой предмет, выставленный на аукцион.
  */
 @Entity
-@Table(name="sellingItems")
+@Table(name = "sellingItems")
 public class SellingItem {
     /**
      * Код предмета.
@@ -28,19 +25,29 @@ public class SellingItem {
      * Цена, с который предмет был выставлен.
      */
     private int price;
+    private int buyNowPrice;
+
+    private boolean finished;
     /**
      * Дата, когда предмет был выставлен.
      */
-    private Date sellingStart;
+    @Column(columnDefinition = "datetime")
+    private Timestamp sellingEnd;
 
     /**
      * Продолжительность аукциона.
      */
     private long duration;
 
+    @ManyToOne(optional = false)
+    private User holder;
+
+    @ManyToOne
+    private User lastBidder;
+
     /**
      * Инициализирует объект класса {@link SellingItem}.
-     * Инициализирует поля {@link SellingItem#id}, {@link SellingItem#item}, {@link SellingItem#price}, {@link SellingItem#sellingStart}.
+     * Инициализирует поля {@link SellingItem#id}, {@link SellingItem#item}, {@link SellingItem#price}, {@link SellingItem#sellingEnd}.
      *
      * @param item - Объект класса {@link Item}
      */
@@ -48,7 +55,7 @@ public class SellingItem {
         this.id = item.getId();
         this.item = new Item(item.getItem());
         this.price = item.getPrice();
-        this.sellingStart = item.getSellingStart();
+        this.sellingEnd = item.getSellingStart();
     }
 
     public long getDuration() {
@@ -83,12 +90,43 @@ public class SellingItem {
         this.price = price;
     }
 
-    public Date getSellingStart() {
-        return sellingStart;
+    public Timestamp getSellingEnd() {
+        return sellingEnd;
     }
 
-    public void setSellingStart(Date sellingStart) {
-        this.sellingStart = sellingStart;
+    public void setSellingEnd(Timestamp sellingEnd) {
+        this.sellingEnd = sellingEnd;
     }
 
+    public User getHolder() {
+        return holder;
+    }
+
+    public void setHolder(User holder) {
+        this.holder = holder;
+    }
+
+    public User getLastBidder() {
+        return lastBidder;
+    }
+
+    public void setLastBidder(User lastBidder) {
+        this.lastBidder = lastBidder;
+    }
+
+    public int getBuyNowPrice() {
+        return buyNowPrice;
+    }
+
+    public void setBuyNowPrice(int buyNowPrice) {
+        this.buyNowPrice = buyNowPrice;
+    }
+
+    public boolean isFinished() {
+        return finished;
+    }
+
+    public void setFinished(boolean finished) {
+        this.finished = finished;
+    }
 }

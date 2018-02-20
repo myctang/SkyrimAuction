@@ -1,13 +1,17 @@
 package com.skyrimAuction.controllers;
 
+import com.skyrimAuction.dataBaseService.entities.InventoryItem;
 import com.skyrimAuction.dataBaseService.entities.Item;
 import com.skyrimAuction.dataBaseService.entities.User;
 import com.skyrimAuction.dataBaseService.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class UserController {
@@ -16,13 +20,23 @@ public class UserController {
 
     @RequestMapping(value = "/users", produces = "application/json")
     @ResponseBody
-    public List<User> getItems(){
-//        List<User> result = new ArrayList<UserModel>();
+    public List<User> getUsers(){
         List<User> got = userService.getUsers();
-//        for (User user : got){
-//            result.add(new UserModel(user));
-//        }
         return got;
+    }
+
+    @RequestMapping(value = "/api/users/info", produces = "application/json")
+    @ResponseBody
+    public User getUserInfo(){
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        return userService.getUserByName(username);
+    }
+
+    @RequestMapping(value = "/api/user/inventory", produces = "application/json")
+    @ResponseBody
+    public List<InventoryItem> getInventory(){
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        return userService.getInventoryByName(username);
     }
 
     @PostMapping(value = "/users", consumes = "application/json")
@@ -35,9 +49,6 @@ public class UserController {
     @ResponseBody
     public User getUser(@RequestBody String name){
         User user = userService.getUserByName(name);
-        for (Item item : user.getInventory()) {
-            System.out.println(item);
-        }
         return user;
     }
 

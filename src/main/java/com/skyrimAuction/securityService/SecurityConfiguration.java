@@ -46,8 +46,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter  {
                 .authorizeRequests().antMatchers("/styles/**").permitAll().and()
                 .authorizeRequests().antMatchers("/public/**").permitAll().and()
                 .authorizeRequests().antMatchers("/favicon.ico").permitAll().and()
+                .authorizeRequests().antMatchers("/jquery-cookie/**").permitAll().and()
                 .authorizeRequests().antMatchers("/api/registerUser").permitAll().and()
                 .authorizeRequests().antMatchers("/api/get/**").permitAll().and()
+                .authorizeRequests().antMatchers("/updateItems/**").permitAll().and()
                 .authorizeRequests().anyRequest().authenticated();
     }
 

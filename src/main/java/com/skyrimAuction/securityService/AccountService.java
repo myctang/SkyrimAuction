@@ -1,7 +1,11 @@
 package com.skyrimAuction.securityService;
 
+import com.skyrimAuction.dataBaseService.entities.InventoryItem;
+import com.skyrimAuction.dataBaseService.entities.Item;
 import com.skyrimAuction.dataBaseService.entities.Role;
 import com.skyrimAuction.dataBaseService.entities.User;
+import com.skyrimAuction.dataBaseService.services.InventoryService;
+import com.skyrimAuction.dataBaseService.services.ItemService;
 import com.skyrimAuction.dataBaseService.services.UserService;
 import io.ebean.annotation.Transactional;
 import org.jboss.logging.Logger;
@@ -13,6 +17,11 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 
 @Service
 public class AccountService implements UserDetailsService{
@@ -23,7 +32,13 @@ public class AccountService implements UserDetailsService{
     private UserService userService;
 
     @Autowired
+    private ItemService itemService;
+
+    @Autowired
     PasswordEncoder passwordEncoder;
+
+    @Autowired
+    InventoryService inventoryService;
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
@@ -47,7 +62,14 @@ public class AccountService implements UserDetailsService{
     public User registerUser(User account) {
         account.setPassword(passwordEncoder.encode(account.getPassword()));
         account.grantAuthority(Role.ROLE_USER);
-        return userService.save( account );
+        User userFromDb = userService.save( account );
+        inventoryService.createItem(new InventoryItem(itemService.getItem(19), userFromDb, 1));
+        inventoryService.createItem(new InventoryItem(itemService.getItem(20), userFromDb, 1));
+        inventoryService.createItem(new InventoryItem(itemService.getItem(21), userFromDb, 1));
+        inventoryService.createItem(new InventoryItem(itemService.getItem(54), userFromDb, 1));
+//        account.setInventory(defaultInventory);
+        account.setMoney(150);
+        return userService.save( userFromDb );
     }
 
     @Transactional

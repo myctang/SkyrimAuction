@@ -4,56 +4,49 @@ import { combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux'
 import thunk from 'redux-thunk'
-import $ from 'jquery';
+import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux'
+import createHistory from 'history/createBrowserHistory'
 
-import AppBar from 'react-toolbox/lib/app_bar';
-import Navigation from 'react-toolbox/lib/navigation';
-import Button from 'react-toolbox/lib/Button';
-import Link from 'react-toolbox/lib/Link';
-import Buy from './components/Buy'
+import getBuyList from './reducers/buyReducer';
+import login from './reducers/loginReducer';
+import getInventory from './reducers/sellReducer';
+import getQuestsList from './reducers/questsReducer';
+import user from './reducers/userReducer';
+import getMySellItems from './reducers/mySellingReducer'
 
-import * as buyReducers from './reducers/buyReducer';
+import MainPage from './components/MainPage'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import '../resources/static/styles/main.css';
 import './images/Logo.png';
 import 'material-design-icons/iconfont/material-icons.css';
+import './libs/jquery-cookie/jquery.cookie.js'
+
+import SockJS from "sockjs-client"
+var Stomp = require("stompjs/lib/stomp.js").Stomp;
+
+
+const history = createHistory();
+const middleware = routerMiddleware(history);
+const reducer = combineReducers({getBuyList, getMySellItems, login, getInventory, getQuestsList, user, routing: routerReducer});
+const store = createStore(reducer, applyMiddleware(thunk, middleware));
 
 
 
-const reducer = combineReducers(buyReducers);
-debugger;
-const store = createStore(reducer, applyMiddleware(thunk));
-
-
-class MainPage extends React.Component{
-    render(){
-        return (
-            <div>
-                <AppBar title='Skyrim Auction'>
-                    <Navigation type='horizontal' className="navigate">
-                        <div className="buttonsMenu">
-                            <div className="buttons">
-                                <Button label="Купить" raised primary/>
-                                <Button label="Продать" raised primary/>
-                                <Button label="Лоты" raised primary/>
-                                <Button label="Обмен" raised primary/>
-                                <Button label="Задания" raised primary/>
-                            </div>
-                        </div>
-                        <div className="cabinet">
-                            <Link label="Личный кабинет"/>
-                        </div>
-                    </Navigation>
-                </AppBar>
-                <Buy />
-            </div>
-        )
-    }
+class MainPageWithRouter extends React.Component{
+    render(){return(
+        <ConnectedRouter history={history}>
+            <MainPage />
+        </ConnectedRouter>
+    )}
 }
+
+export var stompClient = null;
+let socket = new SockJS('/updateItems');
+stompClient = Stomp.over(socket);
 
 ReactDOM.render(
     <Provider store={store}>
-        <MainPage />
+        <MainPageWithRouter/>
     </Provider>, document.getElementById('root')
 );
