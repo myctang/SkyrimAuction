@@ -1,6 +1,7 @@
 package com.skyrimAuction.telegramBot;
 
 import com.skyrimAuction.dataBaseService.entities.User;
+import com.skyrimAuction.dataBaseService.services.UserService;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.api.objects.Update;
@@ -21,8 +22,10 @@ import java.util.List;
 
 public class SkyrimAuctionTelegramBot extends TelegramLongPollingBot {
 
+    private static int counter;
+
     @Autowired
-    EbeanServer server;
+    UserService service;
 
     public void sendMessage(Message message, String text) {
         SendMessage sendMessage = new SendMessage();
@@ -65,17 +68,25 @@ public class SkyrimAuctionTelegramBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
+        try {
 //        sendMessage(update.getMessage(), "replying for: " + update.getMessage().getText());
-        List<User> userList = server.find(User.class).findList();
-        for (User user : userList) {
-            if (user.getTelegramID() == update.getMessage().getFrom().getId()) {
-                String message = "Personal account status:  " + user.getMoney();
-                try {
+        if (update.hasMessage()) {
+            List<User> userList = service.getUsers();
+            for (User user : userList) {
+                if (user.getTelegramID() == update.getMessage().getFrom().getId()) {
+                    String message = "Personal account status:  " + user.getMoney();
                     switchCommand(update.getMessage(), message);
-                } catch (InvalidObjectException e) {
-                    e.printStackTrace();
+                    return;
                 }
             }
+        }
+        } catch (InvalidObjectException | NullPointerException ex) {
+            try {
+                switchCommand(update.getMessage(), counter + " attempt to say that Igor pidor");
+            } catch (InvalidObjectException e) {
+                e.printStackTrace();
+            }
+            counter++;
         }
     }
 

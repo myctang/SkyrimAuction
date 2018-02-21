@@ -59,6 +59,7 @@ create table users (
   roles                         varchar(1000),
   quest_id                      bigint,
   start_of_quest                datetime,
+  telegram_id                   integer not null,
   account_non_expired           tinyint(1) default 0 not null,
   account_non_locked            tinyint(1) default 0 not null,
   credentials_non_expired       tinyint(1) default 0 not null,
