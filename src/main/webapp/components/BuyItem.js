@@ -84,7 +84,7 @@ export class BuyItem extends React.Component {
                     Вес:{this.props.item.weight} <br/>
                     Атака: {this.props.item.damage} <br/>
                     Защита: {this.props.item.defence}<br/>
-                    Текущая ставка: {this.props.price} <br/>
+                    Текущая ставка: {this.props.lastBidder.name} {this.props.price} <br/>
                     Закончится через: <span className="timer"><span className="minutes">{min}</span>:<span
                     className="seconds">{sec}</span></span>
                     <Input type='text' label='Ставка' name='bid' value={this.state.bid}

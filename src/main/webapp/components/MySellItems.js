@@ -84,7 +84,7 @@ class MySellItems extends React.Component {
                         <CardText>Вес:{item.item.weight}
                             <br/> Атака: {item.item.damage}
                             <br/> Защита: {item.item.defence}
-                            <br/> Последняя ставка: {item.price}
+                            <br/> Последняя ставка: {item.lastBidder.name} - {item.price}
                             {time}
                             {finished}
                         </CardText>
