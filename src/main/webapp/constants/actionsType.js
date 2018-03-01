@@ -12,3 +12,5 @@ export const CHECK_ACTIVE_QUEST = "CHECK_ACTIVE_QUEST";
 
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGOUT = "LOGOUT";
+
+export const CHECK_ADMIN = "CHECK_ADMIN";

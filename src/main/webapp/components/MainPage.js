@@ -37,7 +37,11 @@ export class MainPage extends React.Component {
             if (this.props.user !== undefined) {
                 userField.push(<Chip>Ваш баланс: {this.props.user.money}</Chip>);
             }
-            userField.push(<Button label="Личный кабинет"/>);
+            userField.push(
+                <Link to="/me">
+                    <Button label="Личный кабинет"/>
+                </Link>
+            );
             userField.push(<Button label="Выйти" onClick={this.logout}/>);
             linkButton.push(
                 <Link to="/sell">

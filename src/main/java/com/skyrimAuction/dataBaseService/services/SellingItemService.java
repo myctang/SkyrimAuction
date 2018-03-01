@@ -24,6 +24,10 @@ public class SellingItemService {
         return server.find(SellingItem.class).where().eq("holder_id", id).findList();
     }
 
+    public List<SellingItem> getBiddsOfId(long id){
+        return server.find(SellingItem.class).where().eq("last_bidder_id", id).findList();
+    }
+
     public SellingItem getSellingItem(long id){
         return server.find(SellingItem.class, id);
     }

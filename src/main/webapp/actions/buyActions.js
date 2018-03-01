@@ -47,7 +47,7 @@ export function makeBid(id, bid, token) {
                 },
                 statusCode: {
                     200: function () {
-                        console.log("here we are");
+                        console.log("buyActions->makeBid->ajax 200");
                         // $.ajax({
                         //     url: "/api/get/sellingItems",
                         //     method: "GET",
@@ -118,7 +118,7 @@ export function buyNow(id, token) {
 
 export function getMyBidds(token){
     return (dispatch) => {
-        dispatch(GETTING);
+        dispatch({type: GETTING});
         $.ajax({
             url: "/api/sellingItems/getMyBidds",
             method: "GET",

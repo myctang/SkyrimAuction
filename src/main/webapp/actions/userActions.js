@@ -24,3 +24,7 @@ export function getUserInfo(token) {
         );
     }
 }
+
+export function setUserInfo(userInfo){
+    return{type:GET_USER_INFO, data:userInfo}
+}

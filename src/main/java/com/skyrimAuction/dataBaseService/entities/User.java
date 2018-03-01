@@ -37,6 +37,9 @@ public class User implements UserDetails {
     @Column(unique = true)
     private String name;
 
+    private String firstName;
+    private String secondName;
+
     /**
      * Стартовое количество денег.
      */
@@ -48,14 +51,6 @@ public class User implements UserDetails {
     @ElementCollection(targetClass = Role.class)
     @JsonIgnore
     private List<Role> roles;
-
-//    /**
-//     * Лист предметов, которые есть в наличии у пользователя.
-//     *
-//     * @see List
-//     */
-//    @OneToMany
-//    private List<InventoryItem> inventory;
 
     /**
      * Квест которым пользователь в данный момент обладает.
@@ -159,14 +154,6 @@ public class User implements UserDetails {
         this.money = money;
     }
 
-//    public List<InventoryItem> getInventory() {
-//        return inventory;
-//    }
-//
-//    public void setInventory(List<InventoryItem> inventory) {
-//        this.inventory = inventory;
-//    }
-
     public Quest getQuest() {
         return quest;
     }
@@ -203,5 +190,21 @@ public class User implements UserDetails {
 
     public void setTelegramID(int telegramID) {
         this.telegramID = telegramID;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 }
