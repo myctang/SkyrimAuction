@@ -13,14 +13,12 @@ public class SkyrimAuctionTelegramBotService {
     private static UserService userService;
     private static ItemService itemService;
     private static SellingItemService sellingItemService;
-    private static QuestService questService;
 
     @Autowired
     public SkyrimAuctionTelegramBotService(UserService userService, ItemService itemService, SellingItemService sellingItemService, QuestService questService) {
         SkyrimAuctionTelegramBotService.userService = userService;
         SkyrimAuctionTelegramBotService.itemService = itemService;
         SkyrimAuctionTelegramBotService.sellingItemService = sellingItemService;
-        SkyrimAuctionTelegramBotService.questService = questService;
     }
 
     public static UserService getUserService() {
@@ -33,10 +31,6 @@ public class SkyrimAuctionTelegramBotService {
 
     public static SellingItemService getSellingItemService() {
         return sellingItemService;
-    }
-
-    public static QuestService getQuestService() {
-        return questService;
     }
 
 }
