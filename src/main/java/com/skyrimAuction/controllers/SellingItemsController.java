@@ -120,6 +120,14 @@ public class SellingItemsController {
         return sellingItemService.getCurrentSellingItems();
     }
 
+    @GetMapping(value = "/api/sellingItems/getMyBidds")
+    @ResponseBody
+    public List<SellingItem> getMyBidds(){
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        User user = userService.getUserByName(username);
+        return sellingItemService.getBiddsOfId(user.getId());
+    }
+
     @DeleteMapping(value = "/api/sellingItems", consumes = "application/json")
     @ResponseBody
     public boolean remove(@RequestBody Long id) {

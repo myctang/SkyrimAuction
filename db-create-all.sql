@@ -54,6 +54,8 @@ create table sellingitems (
 create table users (
   id                            bigint auto_increment not null,
   name                          varchar(255),
+  first_name                    varchar(255),
+  second_name                   varchar(255),
   money                         bigint not null,
   password                      varchar(255),
   roles                         varchar(1000),

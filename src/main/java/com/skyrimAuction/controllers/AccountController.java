@@ -1,7 +1,6 @@
 package com.skyrimAuction.controllers;
 
 import com.skyrimAuction.dataBaseService.entities.User;
-import com.skyrimAuction.dataBaseService.services.UserService;
 import com.skyrimAuction.securityService.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

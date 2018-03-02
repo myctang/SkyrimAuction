@@ -1,17 +1,20 @@
-import {GET_BUY_LIST} from "../constants/actionsType";
+import {GET_BUY_LIST, GET_MY_BIDDS} from "../constants/actionsType";
 
 
 const initialState = {
-    buyList: []
+    buyList: [],
+    myBidds: []
 };
 
 export default function getBuyList(state = initialState, action){
-    console.log("reducer start");
+    console.log("getBuyList->reducer start");
     switch (action.type){
         case GET_BUY_LIST:
-            console.log("reducer");
+            console.log("getBuyList->reducer->GET_BUY_LIST");
             return {...state, buyList: action.data};
-
+        case GET_MY_BIDDS:
+            console.log("getMyBidds->reducer->GET_MY_BIDDS");
+            return {...state, myBidds: action.data}
         default:
             return state;
     }

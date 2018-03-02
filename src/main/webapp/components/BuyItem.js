@@ -46,7 +46,7 @@ export class BuyItem extends React.Component {
     ];
 
     render() {
-        console.log("but item");
+        console.log("butItem->render");
         debugger;
         let currentDate = new Date();
         let min = Math.floor((this.props.sellingEnd - currentDate.getTime()) / 60000);
@@ -59,6 +59,12 @@ export class BuyItem extends React.Component {
         let style = {width: '300px'};
         if (this.props.lastBidder !== null && this.props.lastBidder.id === this.props.user.id){
             style = {width: '300px', background: 'lightgreen'};
+        }
+        let lastBidder
+        if (this.props.lastBidder === undefined || this.props.lastBidder === null){
+            lastBidder = <span>Никто еще не поставил на этот лот</span>
+        }else{
+            lastBidder = <span>{this.props.lastBidder.name} - {this.props.price}</span>
         }
         console.log("render Buy with time " + min + " sec " + sec);
         return (
@@ -84,7 +90,7 @@ export class BuyItem extends React.Component {
                     Вес:{this.props.item.weight} <br/>
                     Атака: {this.props.item.damage} <br/>
                     Защита: {this.props.item.defence}<br/>
-                    Текущая ставка: {this.props.price} <br/>
+                    Текущая ставка:  {lastBidder}<br/>
                     Закончится через: <span className="timer"><span className="minutes">{min}</span>:<span
                     className="seconds">{sec}</span></span>
                     <Input type='text' label='Ставка' name='bid' value={this.state.bid}

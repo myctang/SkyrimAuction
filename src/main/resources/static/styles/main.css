@@ -71,3 +71,11 @@ header h1 {
 .red {
     color: red;
 }
+
+.content {
+    width: 1000px;
+    margin: auto;
+    background: #4169E1;
+    color: white;
+    padding: 20px 15px;
+}

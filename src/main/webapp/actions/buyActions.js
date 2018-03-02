@@ -1,4 +1,4 @@
-import {GET_BUY_LIST, GET_INVENTORY, GETTING, LOGOUT} from "../constants/actionsType";
+import {GET_BUY_LIST, GET_INVENTORY, GET_MY_BIDDS, GETTING, LOGOUT} from "../constants/actionsType";
 import $ from 'jquery'
 import {getInventory} from "./sellActions";
 
@@ -47,7 +47,7 @@ export function makeBid(id, bid, token) {
                 },
                 statusCode: {
                     200: function () {
-                        console.log("here we are");
+                        console.log("buyActions->makeBid->ajax 200");
                         // $.ajax({
                         //     url: "/api/get/sellingItems",
                         //     method: "GET",
@@ -109,6 +109,29 @@ export function buyNow(id, token) {
                             }
                         },
                         error: dispatch({type: GETTING})
+                    });
+                }
+            }
+        });
+    }
+}
+
+export function getMyBidds(token){
+    return (dispatch) => {
+        dispatch({type: GETTING});
+        $.ajax({
+            url: "/api/sellingItems/getMyBidds",
+            method: "GET",
+            contentType: "application/json; charset=utf-8",
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("Authorization", "Bearer " + token);
+            },
+            statusCode: {
+                200: function(data){
+                    console.log("getMyBidds response 200");
+                    dispatch({
+                        type: GET_MY_BIDDS,
+                        data: data
                     });
                 }
             }
