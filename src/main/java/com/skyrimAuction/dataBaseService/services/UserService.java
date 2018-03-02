@@ -35,10 +35,15 @@ public class UserService {
 
     public List<InventoryItem> getInventoryByName(String name) {
         String sql = "select inventoryItems.id, item_id, user_id, quantity from inventoryItems join users on user_id=users.id where users.name=:username";
-        List<InventoryItem> inventoryItem = Ebean.findNative(InventoryItem.class, sql).setParameter("username", name)
-                .findList();
-        return inventoryItem;
+        return Ebean.findNative(InventoryItem.class, sql).setParameter("username", name).findList();
     }
+
+    public List<InventoryItem> getInventory(User user) {
+        String sql = "select inventoryItems.id, item_id, user_id, quantity from inventoryItems join users on user_id=users.id where users.id=:u_id";
+//        String sql = "select items.id, items.name, items.weight, items.defence, items.weight, quantity from items join inventoryItems on item_id = items.id join users on inventoryItems.user_id=users.id where users.id=:user_id";
+        return Ebean.findNative(InventoryItem.class, sql).setParameter("u_id", user.getId()).findList();
+    }
+
 
     public boolean checkQuestByName(String name) {
         User user = server.find(User.class).where().eq("name", name).findOne();
@@ -74,6 +79,7 @@ public class UserService {
 
     public User addQuest(Quest quest, long id) {
         User user = server.find(User.class, id);
+        assert user != null;
         user.setQuest(quest);
         server.save(user);
         return user;
@@ -104,6 +110,10 @@ public class UserService {
     public boolean removeUser(long id) {
         server.delete(User.class, id);
         return true;
+    }
+
+    public User getUserByTGID(long telegramID) {
+        return server.find(User.class).where().eq("telegram_id", telegramID).findOne();
     }
 
     @Transactional
