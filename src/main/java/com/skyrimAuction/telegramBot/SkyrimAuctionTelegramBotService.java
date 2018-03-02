@@ -35,8 +35,4 @@ public class SkyrimAuctionTelegramBotService {
         return sellingItemService;
     }
 
-    public static QuestService getQuestService() {
-        return questService;
-    }
-
 }
