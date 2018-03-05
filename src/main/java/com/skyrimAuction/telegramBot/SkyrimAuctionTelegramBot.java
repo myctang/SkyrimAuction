@@ -157,11 +157,13 @@ public class SkyrimAuctionTelegramBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return SkyrimAuctionTelegramBotConfig.getBotName();
+//        return SkyrimAuctionTelegramBotConfig.getBotName();
+        return "";
     }
 
     @Override
     public String getBotToken() {
-        return SkyrimAuctionTelegramBotConfig.getBotToken();
+//        return SkyrimAuctionTelegramBotConfig.getBotToken();
+        return "";
     }
 }

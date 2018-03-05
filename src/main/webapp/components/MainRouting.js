@@ -4,6 +4,7 @@ import Sell from "./Sell";
 import Quest from './Quests';
 import MySellItems from './MySellItems';
 import Me from './Me';
+import Admin from './Admin'
 import {Switch, Route} from 'react-router-dom';
 
 export class MainRouting extends React.Component{
@@ -17,6 +18,7 @@ export class MainRouting extends React.Component{
                 <Route path="/quests" component={Quest}/>
                 <Route path="/mysells" component={MySellItems}/>
                 <Route path="/me" component={Me}/>
+                <Route path="/admin" component={Admin}/>
             </Switch>
         )
     }

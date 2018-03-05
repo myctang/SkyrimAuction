@@ -1,6 +1,5 @@
 package com.skyrimAuction.controllers;
 
-import com.skyrimAuction.dataBaseService.entities.InventoryItem;
 import com.skyrimAuction.dataBaseService.entities.Item;
 import com.skyrimAuction.dataBaseService.entities.User;
 import com.skyrimAuction.dataBaseService.services.ItemService;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController

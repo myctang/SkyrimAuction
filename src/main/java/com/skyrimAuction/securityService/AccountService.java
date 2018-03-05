@@ -62,12 +62,13 @@ public class AccountService implements UserDetailsService{
     public User registerUser(User account) {
         account.setPassword(passwordEncoder.encode(account.getPassword()));
         account.grantAuthority(Role.ROLE_USER);
+        if (account.getUsername().equals("admin"))
+            account.grantAuthority(Role.ROLE_ADMIN);
         User userFromDb = userService.save( account );
         inventoryService.createItem(new InventoryItem(itemService.getItem(19), userFromDb, 1));
         inventoryService.createItem(new InventoryItem(itemService.getItem(20), userFromDb, 1));
         inventoryService.createItem(new InventoryItem(itemService.getItem(21), userFromDb, 1));
         inventoryService.createItem(new InventoryItem(itemService.getItem(54), userFromDb, 1));
-//        account.setInventory(defaultInventory);
         account.setMoney(150);
         return userService.save( userFromDb );
     }
