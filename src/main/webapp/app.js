@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { combineReducers, applyMiddleware } from 'redux';
+import { combineReducers, applyMiddleware, createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux'
 import thunk from 'redux-thunk'
 import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux'
 import createHistory from 'history/createBrowserHistory'
@@ -22,8 +21,9 @@ import './images/Logo.png';
 import 'material-design-icons/iconfont/material-icons.css';
 import './libs/jquery-cookie/jquery.cookie.js'
 
+
 import SockJS from "sockjs-client"
-var Stomp = require("stompjs/lib/stomp.js").Stomp;
+let Stomp = require("stompjs/lib/stomp.js").Stomp;
 
 
 const history = createHistory();

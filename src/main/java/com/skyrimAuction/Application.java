@@ -14,9 +14,7 @@ import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.exceptions.TelegramApiRequestException;
-import org.telegram.telegrambots.generics.BotOptions;
 import org.telegram.telegrambots.generics.BotSession;
-import org.telegram.telegrambots.generics.LongPollingBot;
 
 @SpringBootApplication
 @EnableScheduling
