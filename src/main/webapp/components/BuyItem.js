@@ -7,6 +7,7 @@ import {withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import * as buyActions from '../actions/buyActions'
+import * as userActions from '../actions/userActions'
 import $ from "jquery";
 
 export class BuyItem extends React.Component {
@@ -37,10 +38,12 @@ export class BuyItem extends React.Component {
             return;
         }
         this.props.buyActions.makeBid(this.props.id, this.state.bid, $.cookie("access_token"));
+        setTimeout(this.props.userActions.getUserInfo, 500, $.cookie("access_token"));
     };
 
     buyNow = () => {
         this.props.buyActions.buyNow(this.props.id, $.cookie("access_token"));
+        setTimeout(this.props.userActions.getUserInfo, 500, $.cookie("access_token"));
     };
 
     actions = [
@@ -145,7 +148,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        buyActions: bindActionCreators(buyActions, dispatch)
+        buyActions: bindActionCreators(buyActions, dispatch),
+        userActions: bindActionCreators(userActions, dispatch)
     }
 }
 

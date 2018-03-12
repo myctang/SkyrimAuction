@@ -4,6 +4,7 @@ import {withRouter} from 'react-router-dom'
 import SellItem from './SellItem'
 import {bindActionCreators} from "redux";
 import * as sellActions from "../actions/sellActions";
+import * as userActions from "../actions/userActions";
 import $ from 'jquery';
 
 export class Sell extends React.Component{
@@ -12,6 +13,11 @@ export class Sell extends React.Component{
         const { getInventory } = props.sellActions;
         getInventory($.cookie("access_token"));
     }
+
+    componentWillMount = () => {
+      this.props.userActions.getUserInfo($.cookie("access_token"));
+    }
+    
 
     render(){
         let items = [];
@@ -44,7 +50,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch){
     return{
-        sellActions: bindActionCreators(sellActions, dispatch)
+        sellActions: bindActionCreators(sellActions, dispatch),
+        userActions: bindActionCreators(userActions, dispatch)
     }
 }
 

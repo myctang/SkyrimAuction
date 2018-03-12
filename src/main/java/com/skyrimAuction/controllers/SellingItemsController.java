@@ -85,11 +85,13 @@ public class SellingItemsController {
         } else {
             if (itemFromBase.getLastBidder() != null) {
                 itemFromBase.getLastBidder().setMoney(itemFromBase.getLastBidder().getMoney() + itemFromBase.getPrice());
+                userService.updateUser(itemFromBase.getLastBidder());
             }
             itemFromBase.setPrice(item.getPrice());
             bidder.setMoney(bidder.getMoney() - item.getPrice());
             itemFromBase.setLastBidder(bidder);
             itemFromBase = sellingItemService.save(itemFromBase);
+            userService.updateUser(bidder);
             try {
                 simpMessagingTemplate.send("/updateItems", MessageBuilder.withPayload(mapper.
                         writeValueAsString(sellingItemService.getCurrentSellingItems()).getBytes("UTF-8")).build());
