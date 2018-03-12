@@ -32,6 +32,10 @@ export class BuyItem extends React.Component {
     makeBid = () => {
         console.log("making bid");
         debugger;
+        if (this.props.buyNowPrice <= parseInt(this.state.bid)){
+            $("#byuNowBidError").show();
+            return;
+        }
         this.props.buyActions.makeBid(this.props.id, this.state.bid, $.cookie("access_token"));
     };
 
@@ -54,7 +58,7 @@ export class BuyItem extends React.Component {
         if (min < 0 || sec < 0) {
             min = 0;
             sec = 0;
-            this.props.buyActions.getBuyList();
+            // this.props.buyActions.getBuyList();
         }
         let style = {width: '300px'};
         if (this.props.lastBidder !== null && this.props.lastBidder.id === this.props.user.id){
@@ -62,7 +66,7 @@ export class BuyItem extends React.Component {
         }
         let lastBidder
         if (this.props.lastBidder === undefined || this.props.lastBidder === null){
-            lastBidder = <span>Никто еще не поставил на этот лот</span>
+            lastBidder = <span>Начальная ставка - {this.props.price}</span>
         }else{
             lastBidder = <span>{this.props.lastBidder.name} - {this.props.price}</span>
         }
@@ -91,10 +95,12 @@ export class BuyItem extends React.Component {
                     Атака: {this.props.item.damage} <br/>
                     Защита: {this.props.item.defence}<br/>
                     Текущая ставка:  {lastBidder}<br/>
+                    Купить сейчас: {this.props.buyNowPrice}<br/>
                     Закончится через: <span className="timer"><span className="minutes">{min}</span>:<span
                     className="seconds">{sec}</span></span>
                     <Input type='text' label='Ставка' name='bid' value={this.state.bid}
                            onChange={this.handleChange.bind(this, 'bid')} maxLength={16}/>
+                    <p id="byuNowBidError" className="error">Нельзя сделать ставку больше или равную цене купить сейчас</p>
                 </Dialog>
             </div>
         )
@@ -108,7 +114,7 @@ export class BuyItem extends React.Component {
             let min = parseInt($(".timer .minutes").text());
             if (min === 0) {
                 this.setState({active:false});
-                this.props.buyActions.getBuyList();
+                // this.props.buyActions.getBuyList();
                 return;
             }
             min--;

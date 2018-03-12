@@ -74,6 +74,12 @@ class MySellItems extends React.Component {
                 )
             }
             let style = {width: '300px'}
+            let lastBidder;
+            if (item.lastBidder !== undefined && item.lastBidder !== null){
+                lastBidder = <span>Последняя ставка: {item.lastBidder.name} - {item.price}</span>
+            } else {
+                lastBidder = <span>Пока никто не сделал ставку</span>
+            }
             items.push(
                 <div className="buyItemCard">
                     <Card style={style}>
@@ -84,7 +90,7 @@ class MySellItems extends React.Component {
                         <CardText>Вес:{item.item.weight}
                             <br/> Атака: {item.item.damage}
                             <br/> Защита: {item.item.defence}
-                            <br/> Последняя ставка: {item.lastBidder.name} - {item.price}
+                            <br/> {lastBidder}
                             {time}
                             {finished}
                         </CardText>

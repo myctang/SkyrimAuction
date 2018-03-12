@@ -75,13 +75,14 @@ export class SellItem extends React.Component {
                     Вес: {this.props.item.weight} <br/>
                     Атака: {this.props.item.damage} <br/>
                     Защита: {this.props.item.defence}<br/>
+                    Количество: {this.props.quantity}<br/>
                     <Input type='text' label='Начальная ставка' name='StartBid' value={this.state.StartBid}
                            onChange={this.handleChange.bind(this, 'StartBid')}/>
                     <Input type='text' label='Купить сейчас' name='buyNow' value={this.state.buyNow}
                            onChange={this.handleChange.bind(this, 'buyNow')}/>
                     <Input type='text' label='Длительность аукциона (в мин.)' name='duration'
                            value={this.state.duration} onChange={this.handleChange.bind(this, 'duration')}/>
-                    <p id="error_input" className=".error">Введите начальную ставку и стоимость купить сейчас, а так же длительность аукциона. Начальная ставка должна быть меньше стоимости купить сейчас.</p>
+                    <p id="error_input" className="error">Введите начальную ставку и стоимость купить сейчас, а так же длительность аукциона. Начальная ставка должна быть меньше стоимости купить сейчас.</p>
                     <Button label="Выставить" onClick={this.CreateAuction}/>
                 </Dialog>
             </div>

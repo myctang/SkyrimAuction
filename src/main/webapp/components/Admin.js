@@ -14,8 +14,10 @@ export class Admin extends Component {
         forbidden: false,
         users: [],
         items: [],
+        userItems: [],
         usersOpened: false,
         itemsOpened: false,
+        userItemsOpened: false,
         itemId: "",
         userId: "",
     };
@@ -73,6 +75,10 @@ export class Admin extends Component {
         this.setState({...this.state, itemsOpened: !this.state.itemsOpened})
     };
 
+    reverseUserItemsDialog = () => {
+        this.setState({...this.state, userItemsOpened: !this.state.userItemsOpened})
+    };
+
     addItem = () => {
         let token = $.cookie("access_token")
         let data = {
@@ -81,13 +87,24 @@ export class Admin extends Component {
         }
         $.ajax({
             method: "POST",
-            url: "/admin/setItem",
+            url: "/admin/setItem?" + $.param(data),
             headers: {"Authorization": "Bearer " + token},
-            data: JSON.stringify(data),
-        }).then((data) => {
-            
-        });
+        })
     };
+
+    getUserItems = () => {
+        let token = $.cookie("access_token")
+        let data = {
+            "userId":parseInt(this.state.userId)
+        }
+        $.ajax({
+            method: "GET",
+            url: "/admin/userItem?" + $.param(data),
+            headers: {"Authorization": "Bearer " + token},
+        }).then((data) => {
+            this.setState({...this.state, userItems:data, userItemsOpened: !this.state.userItemsOpened});
+        })
+    }
 
     handleChange = (name, value) => {
         this.setState({...this.state, [name]: value});
@@ -160,6 +177,34 @@ export class Admin extends Component {
                 <Input type="text" label="Id предмета" name="itemId" value={this.state.itemId} onChange={this.handleChange.bind(this, 'itemId')} />
                 <Input type="text" label="Id пользователя" name="userId" value={this.state.userId} onChange={this.handleChange.bind(this, 'userId')} />
                 <Button label="Добавить предметы" raised onClick={this.addItem}/>
+                <Button label="Предметы пользователя" raised onClick={this.getUserItems}/>
+                <Dialog
+                    active={this.state.userItemsOpened}
+                    onEscKeyDown={this.reverseUserItemsDialog}
+                    onOverlayClick={this.reverseUserItemsDialog}
+                    title='Предметы пользователя'
+                >
+                    <Table selectable={false}>
+                        <TableHead>
+                            <TableCell>Id</TableCell>
+                            <TableCell>Name</TableCell>
+                            <TableCell>Damage</TableCell>
+                            <TableCell>Defence</TableCell>
+                            <TableCell>Weight</TableCell>
+                            <TableCell>Count</TableCell>
+                        </TableHead>
+                        {this.state.userItems.map((item, idx) => (
+                            <TableRow key={idx}>
+                                <TableCell>{item.item.id}</TableCell>
+                                <TableCell>{item.item.name}</TableCell>
+                                <TableCell>{item.item.damage}</TableCell>
+                                <TableCell>{item.item.defence}</TableCell>
+                                <TableCell>{item.item.weight}</TableCell>
+                                <TableCell>{item.quantity}</TableCell>
+                            </TableRow>
+                        ))}
+                    </Table>
+                </Dialog>
             </div>
         )
     }

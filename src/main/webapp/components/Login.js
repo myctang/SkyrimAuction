@@ -1,11 +1,15 @@
 import React from 'react';
 import $ from "jquery";
+import * as userActions from "../actions/userActions";
+import {connect} from "react-redux";
+import {withRouter} from "react-router-dom";
+import {bindActionCreators} from "redux";
 
 import Input from 'react-toolbox/lib/input';
 import Dialog from 'react-toolbox/lib/dialog';
 import Button from 'react-toolbox/lib/Button';
 
-export default class Login extends React.Component{
+export class Login extends React.Component{
     state = {
         activeRegistration: false,
         activeLogin: false,
@@ -76,6 +80,7 @@ export default class Login extends React.Component{
                     this.setState({...this.state, activeLogin: false});
                     console.log("login");
                     this.props.loginSuccess.loginSuccess($.cookie("access_token"));
+                    this.props.userActions.getUserInfo($.cookie("access_token"));
                 }
             }
         });
@@ -122,4 +127,17 @@ export default class Login extends React.Component{
             </Dialog>
         </div>
     )}
+
 }
+
+function mapStateToProps(state) {
+    console.log("Login->mapStateToProps");
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        userActions: bindActionCreators(userActions, dispatch)
+    }
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login))

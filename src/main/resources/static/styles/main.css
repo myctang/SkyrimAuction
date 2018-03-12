@@ -83,3 +83,10 @@ header h1 {
 div[data-react-toolbox=dialog] > section{
     overflow: auto;
 }
+
+.questItem{
+    border-radius: 5px;
+    border: black solid 1px;
+    margin-top: 20px;
+    background-color: aqua;
+}

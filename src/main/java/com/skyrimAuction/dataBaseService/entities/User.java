@@ -60,7 +60,7 @@ public class User implements UserDetails {
     @ManyToOne
     private Quest quest;
 
-    @Column(columnDefinition = "datetime")
+    @Column
     private Timestamp startOfQuest;
 
     private int telegramID;

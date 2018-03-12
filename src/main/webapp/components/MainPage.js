@@ -11,14 +11,24 @@ import * as loginActions from '../actions/loginAction'
 import * as userActions from '../actions/userActions'
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import {Link, withRouter} from 'react-router-dom'
+import { Link, withRouter, Redirect } from 'react-router-dom'
 
 export class MainPage extends React.Component {
+
+    state = {
+        redirect: false
+    }
 
     logout = () => {
         $.removeCookie("access_token");
         this.props.loginActions.logout();
+        this.setState({...this.state, redirect: true})
     };
+
+    componentWillMount = () => {
+      this.setState({...this.state, redirect: false})
+    }
+    
 
     constructor(props) {
         super(props);
@@ -62,8 +72,14 @@ export class MainPage extends React.Component {
             linkButton.push(<Button label="Мои лоты" disabled raised primary/>);
         }
 
+        let redirect;
+        if (this.state.redirect) {
+            redirect = <Redirect to="/" />
+        }
+
         return (
             <div>
+                {redirect}
                 <AppBar title='Skyrim Auction'>
                     <Navigation type='horizontal' className="navigate">
                         <div className="buttonsMenu">

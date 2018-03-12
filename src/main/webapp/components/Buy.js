@@ -40,34 +40,6 @@ class BuyList extends React.Component {
             </div>
         )
     }
-
-    tick = () => {
-        console.log("started");
-        let sec = parseInt($(".timer .seconds").text());
-        console.log(sec);
-        if (sec === 0) {
-            let min = parseInt($(".timer .minutes").text());
-            if (min === 0) {
-                this.setState({active:false});
-                this.props.buyActions.getBuyList();
-                return;
-            }
-            min--;
-            $(".timer .minutes").text(min);
-            $(".timer .seconds").text("59");
-            return;
-        }
-        sec--;
-        $(".timer .seconds").text(sec);
-    };
-
-    componentDidMount() {
-        this.interval = setInterval(this.tick, 1000);
-    }
-
-    componentWillUnmount() {
-        clearInterval(this.interval);
-    }
 }
 
 function mapStateToProps(state) {

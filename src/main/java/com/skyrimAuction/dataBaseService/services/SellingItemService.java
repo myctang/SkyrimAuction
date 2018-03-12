@@ -19,11 +19,11 @@ public class SellingItemService {
     EbeanServer server;
 
     public List<SellingItem> getActualLotsByUser(User user) {
-        return server.find(SellingItem.class).where().eq("finished", "false").eq("holder_id", user.getId()).findList();
+        return server.find(SellingItem.class).where().eq("finished", false).eq("holder_id", user.getId()).findList();
     }
 
     public List<SellingItem> getFinishedLotsByUser(User user) {
-        return server.find(SellingItem.class).where().eq("finished", "true").eq("holder_id", user.getId()).findList();
+        return server.find(SellingItem.class).where().eq("finished", true).eq("holder_id", user.getId()).findList();
     }
 
     public List<SellingItem> getTheMostExpensiveLots(int quantity) {
@@ -33,7 +33,7 @@ public class SellingItemService {
         return null;
     }
     public List<SellingItem> getCurrentSellingItems(){
-        return server.find(SellingItem.class).where().eq("finished", "false").findList();
+        return server.find(SellingItem.class).where().eq("finished", false).findList();
     }
 
     public List<SellingItem> getMySellingItems(long id){

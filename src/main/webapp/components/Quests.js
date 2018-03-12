@@ -56,15 +56,23 @@ class Quests extends React.Component {
         this.props.questsList.forEach((quest) => {
             if (this.props.user.quest !== undefined && this.props.user.quest !== null) {
                 if (this.props.user.quest.id === quest.id) {
-                    items.push(<CurrentQuest {...quest}/>);
+                    items.push(
+                        <div className="questItem">
+                            <CurrentQuest {...quest}/>
+                        </div>
+                    );
                 } else {
                     items.push(
-                        <QuestItem {...quest}/>
+                        <div className="questItem">
+                            <QuestItem {...quest}/>
+                        </div>
                     )
                 }
             } else {
                 items.push(
-                    <QuestItem {...quest}/>
+                    <div className="questItem">
+                        <QuestItem {...quest}/>
+                    </div>
                 )
             }
         });

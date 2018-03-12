@@ -31,7 +31,7 @@ public class SellingItem {
     /**
      * Дата, когда предмет был выставлен.
      */
-    @Column(columnDefinition = "datetime")
+    @Column
     private Timestamp sellingEnd;
 
     /**

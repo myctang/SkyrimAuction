@@ -37,11 +37,12 @@ export class QuestItem extends React.Component {
         ];
         console.log("quest item");
         debugger;
+        let duration = "Продолжительность: " + this.props.duration + " сек."
         return (
             <div>
                 <ListItem
                     caption={this.props.name}
-                    legend={this.props.duration}
+                    legend={duration}
                     onClick={this.handleToggle}
                 />
                 <Dialog
