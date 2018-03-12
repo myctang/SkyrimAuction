@@ -109,8 +109,17 @@ public class SellingItemsController {
         if (itemFromBase == null || itemFromBase.getBuyNowPrice() > buyer.getMoney()){
             throw new NotAcceptableExeption();
         }
-        sellingItemService.removeSellingItem(item.getId());
+        itemFromBase.setFinished(true);
+        itemFromBase.setPrice(itemFromBase.getBuyNowPrice());
+        itemFromBase.setLastBidder(buyer);
+        sellingItemService.updateSellingItem(itemFromBase);
         userService.addItem(itemFromBase.getItem(), buyer);
+        buyer.setMoney(buyer.getMoney() - itemFromBase.getBuyNowPrice());
+        userService.updateUser(buyer);
+        User holder = itemFromBase.getHolder();
+        holder.setMoney(holder.getMoney() + itemFromBase.getBuyNowPrice());
+        userService.updateUser(holder);
+        auctionItemsService.buyNow(itemFromBase);
         try {
             simpMessagingTemplate.send("/updateItems", MessageBuilder.withPayload(mapper.
                     writeValueAsString(sellingItemService.getCurrentSellingItems()).getBytes("UTF-8")).build());

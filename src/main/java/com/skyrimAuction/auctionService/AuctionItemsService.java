@@ -66,7 +66,9 @@ public class AuctionItemsService {
             winner = fromBase.getHolder();
         }else{
             winner = fromBase.getLastBidder();
-            winner.setMoney(winner.getMoney() + sellingItem.getPrice());
+            User holder = fromBase.getHolder();
+            holder.setMoney(holder.getMoney() + sellingItem.getPrice());
+            userService.updateUser(holder);
         }
         Item wonItem = itemService.getItem(sellingItem.getItem().getId());
         userService.addItem(wonItem, winner);
@@ -75,6 +77,15 @@ public class AuctionItemsService {
             simpMessagingTemplate.send("/updateItems", MessageBuilder.withPayload(mapper.writeValueAsString(sellingItemService.getCurrentSellingItems()).getBytes("UTF-8")).build());
         }catch (IOException e){
             System.out.println(e.getMessage());
+        }
+    }
+
+    public void buyNow(SellingItem item){
+        for (int i = 0; i < sellingItems.size(); i++){
+            if (sellingItems.get(i).getId() == item.getId()){
+                sellingItems.remove(i);
+                i--;
+            }
         }
     }
 

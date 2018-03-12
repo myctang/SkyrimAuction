@@ -20,7 +20,7 @@ public class SkyrimAuctionTelegramBot extends TelegramLongPollingBot {
         sendMessageRequest.setChatId(chatID);
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<String> botCommands = new ArrayList<>();
-        //Going to add another commands in future time
+//Going to add another commands in future time
         botCommands.add("/checkAccount");
         botCommands.add("/getInventory");
         botCommands.add("/getActualLots");
@@ -53,7 +53,7 @@ public class SkyrimAuctionTelegramBot extends TelegramLongPollingBot {
         User user = SkyrimAuctionTelegramBotService.getUserService().getUserByTGID(message.getFrom().getId());
         StringBuilder sendText = new StringBuilder();
         if (message.hasText() && user != null) {
-            switch(message.getText().substring(1, 7)) {
+            switch(message.getText().substring(1, 8)) {
                 case "checkAc": {
                     sendText.append("Your money at ").append(new Date()).append(": ").append(user.getMoney()).append("\n");
                     break;
@@ -95,7 +95,7 @@ public class SkyrimAuctionTelegramBot extends TelegramLongPollingBot {
                                 .append("\nPrice: ").append(item.getBuyNowPrice())
                                 .append("\nFinal price: ").append(item.getBuyNowPrice())
                                 .append("\nLastBidder: ").append(item.getLastBidder().getName())
-                                .append("\nItem: ").append(item.getItem().getName());
+                                .append("\nItem:").append(item.getItem().getName());
                     }
                     break;
                 }
@@ -149,9 +149,16 @@ public class SkyrimAuctionTelegramBot extends TelegramLongPollingBot {
             }
             switchCommand(message.getChatId(), sendText.toString());
         } else {
+            if (message.getText().substring(1, 8).equals("contact")) {
+                sendText.append("Ruslan Filichkin\n")
+                        .append("ruslan.filichkin@gmail.com\n")
+                        .append("Igor Popov\n")
+                        .append("Belosnezhka@lyblyreact.com");
+                switchCommand(message.getChatId(), sendText.toString());
+            }
             switchCommand(message.getChatId(),
                     "Your telegram account have not registered yet.\n" +
-                    "You can connect this telegram account through Personal Room.");
+                            "You can connect this telegram account through Personal Room.");
         }
     }
 
